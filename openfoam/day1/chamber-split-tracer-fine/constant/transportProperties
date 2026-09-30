@@ -1,0 +1,11 @@
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class dictionary;
+    object transportProperties;
+}
+
+// Illustrative tracer diffusivity in m^2/s. Not fitted to a process gas.
+// This controls spreading of tracer, not the viscosity of the carrier flow.
+DT [0 2 -1 0 0 0 0] 1e-5;

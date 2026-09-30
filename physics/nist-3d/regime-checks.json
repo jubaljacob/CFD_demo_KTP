@@ -1,0 +1,79 @@
+{
+  "status": "pre-mesh estimates; carrier and tracer solution checks still pending",
+  "rho_kg_per_m3": 0.11723126,
+  "mu_Pa_s": 2.1509349e-05,
+  "nu_m2_per_s": 0.00018347793071574938,
+  "sound_speed_m_per_s": 398.72561,
+  "rho_standard_ideal_kg_per_m3": 1.2495104079933015,
+  "rho_operating_ideal_kg_per_m3": 0.11723522265413291,
+  "standard_volume_flow_m3_per_s": 4.9999999999999996e-06,
+  "mass_flow_kg_per_s": 6.247552039966507e-06,
+  "local_volume_flow_m3_per_s": 5.329254364379012e-05,
+  "local_volume_flow_litre_per_min": 3.197552618627407,
+  "inlet_total_analytic_area_m2": 7.238229473870882e-05,
+  "volume_flow_per_inlet_m3_per_s": 1.332313591094753e-05,
+  "mass_flow_per_inlet_kg_per_s": 1.5618880099916268e-06,
+  "inlet_mean_speed_m_per_s": 0.7362649089279312,
+  "inlet_Re_diameter": 19.26156213484433,
+  "inlet_Mach": 0.0018465453195442628,
+  "mean_free_path_m": 6.818955179829481e-07,
+  "inlet_Kn_diameter": 0.00014206156624644754,
+  "mean_exhaust_speed_equal_split_estimate_m_per_s": 0.1325276836070276,
+  "support_passages": [
+    {
+      "section": "wafer boat envelope",
+      "radial_gap_m": 0.018000000000000002,
+      "mean_axial_speed_estimate_m_per_s": 0.011219274802711328,
+      "Re_hydraulic_diameter": 2.2013213868393513,
+      "Kn_radial_gap": 3.7883084332386e-05
+    },
+    {
+      "section": "upper housing envelope",
+      "radial_gap_m": 0.018000000000000002,
+      "mean_axial_speed_estimate_m_per_s": 0.011219274802711328,
+      "Re_hydraulic_diameter": 2.2013213868393513,
+      "Kn_radial_gap": 3.7883084332386e-05
+    },
+    {
+      "section": "smooth bellows envelope",
+      "radial_gap_m": 0.013000000000000005,
+      "mean_axial_speed_estimate_m_per_s": 0.014661662490665103,
+      "Re_hydraulic_diameter": 2.07765164600568,
+      "Kn_radial_gap": 5.2453501383303684e-05
+    },
+    {
+      "section": "lower stem envelope",
+      "radial_gap_m": 0.034,
+      "mean_axial_speed_estimate_m_per_s": 0.007337172794852737,
+      "Re_hydraulic_diameter": 2.7192793602133163,
+      "Kn_radial_gap": 2.0055750528910237e-05
+    }
+  ],
+  "diffusion_at_reference_pressure_m2_per_s": 3.2311986580182915e-05,
+  "label_diffusivity_m2_per_s": 0.0002455754605638339,
+  "Schmidt_nu_over_D": 0.747134629390451,
+  "inlet_Peclet_Ud_over_D": 14.390980087098063,
+  "analytic_gas_volume_m3": 0.003133924235361891,
+  "nominal_volume_over_flow_time_s": 58.806054676413815,
+  "input_sha256": {
+    "physics/nist-3d/operating-point.json": "49d9ef4266bb040a58ca1a79578bae102fbecea4cd52762e6aa50adafc8f18fa",
+    "geometry/nist-3d/geometry-spec.json": "8a0a7bcd01461fe11450a5decad15f6f254392910829b1f2da1c3283df4fc97b",
+    "references/nist-reactor/nitrogen-383K-13332Pa.tsv": "13d0d74c4e9930dc9e5bfa49310eb07116041ec1e6e2332fb2a3f04ba06e7b73",
+    "references/nist-reactor/NIST.TN.2279.pdf": "67d9627330960b938b4e9ec92019ea0f5e5c81d5e7ca132f2d1b1c17686d3e45"
+  },
+  "formula_notes": [
+    "sccm to m3/s: multiply by 1e-6/60; standard molar flow uses ideal gas convention.",
+    "mdot = Qstandard*pstandard/(R_specific*Tstandard); Qlocal = mdot/rho_NIST.",
+    "nu=mu/rho; Re=U*L/nu; Mach=U/sound; lambda=mu*sqrt(pi/(2*rho*p)); Kn=lambda/L.",
+    "D from NIST full temperature fit in cm2/s, converted to m2/s and multiplied by 101325/p.",
+    "Volume is analytic for the simplified envelope, including inlet/outlet tubes; compare with mesh volume.",
+    "V/Q is a nominal turnover scale, not a prediction of wafer arrival time or complete replacement.",
+    "Passage speeds assume net Q crossing each annulus; local jets and recirculation are unresolved."
+  ],
+  "screening": {
+    "inlet_low_Mach": true,
+    "geometric_continuum": true,
+    "laminar": "low inlet and passage Reynolds estimates support a laminar pilot; steadiness remains untested",
+    "constant_density": "conditional on post-solve pressure variation and uniform-temperature assumption"
+  }
+}

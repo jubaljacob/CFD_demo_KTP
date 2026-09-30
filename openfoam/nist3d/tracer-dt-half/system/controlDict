@@ -1,0 +1,119 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2512                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+FoamFile
+{
+    version         2;
+    format          ascii;
+    class           dictionary;
+    object          controlDict;
+}
+
+application     scalarTransportFoam;
+
+startFrom       latestTime;
+
+startTime       0;
+
+stopAt          endTime;
+
+endTime         40;
+
+deltaT          0.025;
+
+adjustTimeStep  no;
+
+writeControl    runTime;
+
+writeInterval   10;
+
+purgeWrite      0;
+
+writeFormat     binary;
+
+writePrecision  12;
+
+writeCompression off;
+
+timeFormat      general;
+
+timePrecision   8;
+
+runTimeModifiable true;
+
+functions
+{
+    labelBudget
+    {
+        type            coded;
+        libs            ( utilityFunctionObjects );
+        name            nitrogenLabelBudget;
+        executeControl  timeStep;
+        executeInterval 1;
+        writeControl    none;
+        codeInclude     #{
+            #include "fvCFD.H"
+            #include <fstream>
+            #include <iomanip>
+        #};
+        codeExecute     #{
+            const fvMesh& m = mesh();
+            if (!m.foundObject<volScalarField>("T") || !m.foundObject<surfaceScalarField>("phi")) return true;
+            const volScalarField& T = m.lookupObject<volScalarField>("T");
+            const surfaceScalarField& phi = m.lookupObject<surfaceScalarField>("phi");
+            const IOdictionary& transport = m.lookupObject<IOdictionary>("transportProperties");
+            const scalar D = dimensionedScalar("DT", dimViscosity, transport).value();
+            const tmp<surfaceScalarField> tg = fvc::snGrad(T);
+            const surfaceScalarField& sn = tg();
+            const scalar inventory = gSum(T.primitiveField()*m.V());
+            const scalar volume = gSum(m.V());
+            const scalar lo = gMin(T.primitiveField());
+            const scalar hi = gMax(T.primitiveField());
+            scalar adv = 0, diff = 0, outletAdv = 0, outletQ = 0;
+            forAll(m.boundary(), patchi)
+            {
+                if (m.boundary()[patchi].coupled()) continue;
+                const scalar ap = gSum(phi.boundaryField()[patchi]*T.boundaryField()[patchi]);
+                const scalar dp = -D*gSum(sn.boundaryField()[patchi]*m.magSf().boundaryField()[patchi]);
+                adv += ap;
+                diff += dp;
+                if (m.boundary()[patchi].name() == "outlet1" || m.boundary()[patchi].name() == "outlet2")
+                {
+                    outletAdv += ap;
+                    outletQ += gSum(phi.boundaryField()[patchi]);
+                }
+            }
+            if (Pstream::master())
+            {
+                const fileName dir(m.time().globalPath()/"postProcessing"/"labelBudget");
+                mkDir(dir);
+                const fileName path(dir/"budget.csv");
+                const bool fresh = !isFile(path);
+                std::ofstream os(path.c_str(), std::ios::app);
+                if (fresh) os << "time_s,inventory_m3,volume_m3,min_T,max_T,advective_outward_m3_s,diffusive_outward_m3_s,outlet_label_flux_m3_s,outlet_carrier_flux_m3_s\n";
+                os << std::setprecision(16) << m.time().value() << ',' << inventory << ',' << volume << ',' << lo << ',' << hi << ',' << adv << ',' << diff << ',' << outletAdv << ',' << outletQ << '\n';
+            }
+        #};
+    }
+    aboveWafer
+    {
+        type            probes;
+        libs            ( sampling );
+        fields          ( T );
+        interpolationScheme cell;
+        fixedLocations  true;
+        includeOutOfBounds true;
+        writePrecision  14;
+        writeControl    timeStep;
+        writeInterval   1;
+        probeLocations  ( ( 0 0 -0.156 ) ( 0.02 0 -0.156 ) ( -0.02 0 -0.156 ) ( 0 0.02 -0.156 ) ( 0 -0.02 -0.156 ) ( 0.0141421 0.0141421 -0.156 ) ( -0.0141421 0.0141421 -0.156 ) ( 0.0141421 -0.0141421 -0.156 ) ( -0.0141421 -0.0141421 -0.156 ) );
+    }
+}
+
+
+// ************************************************************************* //

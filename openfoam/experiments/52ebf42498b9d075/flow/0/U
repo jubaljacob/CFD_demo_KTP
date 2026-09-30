@@ -1,0 +1,53 @@
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class volVectorField;
+    object U;
+}
+
+dimensions [0 1 -1 0 0 0 0];
+internalField uniform (0 0 0);
+boundaryField
+{
+    inlet1
+    {
+        type flowRateInletVelocity;
+        volumetricFlowRate 1.332313591094753e-05;
+        extrapolateProfile no;
+        value uniform (0 0 0);
+    }
+    inlet2
+    {
+        type flowRateInletVelocity;
+        volumetricFlowRate 1.332313591094753e-05;
+        extrapolateProfile no;
+        value uniform (0 0 0);
+    }
+    inlet3
+    {
+        type flowRateInletVelocity;
+        volumetricFlowRate 1.332313591094753e-05;
+        extrapolateProfile no;
+        value uniform (0 0 0);
+    }
+    inlet4
+    {
+        type flowRateInletVelocity;
+        volumetricFlowRate 1.332313591094753e-05;
+        extrapolateProfile no;
+        value uniform (0 0 0);
+    }
+inlet5
+    {
+        type flowRateInletVelocity;
+        volumetricFlowRate 1.332313591094753e-05;
+        extrapolateProfile no;
+        value uniform (0 0 0);
+    }
+    outlet1 { type pressureInletOutletVelocity; value uniform (0 0 0); }
+    outlet2 { type pressureInletOutletVelocity; value uniform (0 0 0); }
+    wafer { type noSlip; }
+    support { type noSlip; }
+    walls { type noSlip; }
+}

@@ -1,0 +1,20 @@
+{
+  "carrier_case": "openfoam/experiments/52ebf42498b9d075/flow",
+  "carrier_iteration": 600,
+  "mesh_sha256": {
+    "points": "557114a3aeaa675d612ef07dd27b17313202acfc09bd6c4ed35d7052096460b7",
+    "faces": "6550467e6b69bd2bdafd7528a042e8ca99197ac69fe5496ddf3cf0096df43227",
+    "owner": "5f8a0f954c331fa065964c503dce3cfe9a20244a6c74cf6c9c9fd75d88e097d1",
+    "neighbour": "c38c2c10da26bb5d083da91e391ace7f5eb155768b416f6151baaa01b5fe1750",
+    "boundary": "09495592abca6e5d9b2905fb8a386d13e8f5d59230a85181d2d4451d256d179f"
+  },
+  "source_fields_sha256": {
+    "U": "fe4d62cb32cc911375026a0db4ef3c3a487cccc0e3c353b71c083d0744761cad",
+    "phi": "1af6c18d9881666c1d9e5b58733371b56dfc91d67179a00d73a664492fb396c1"
+  },
+  "dt_s": 0.05,
+  "end_s": 40,
+  "correction_passes": 4,
+  "inlet_count": 5,
+  "meaning": "Passive nitrogen label, not precursor, temperature or film growth"
+}

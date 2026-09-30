@@ -1,0 +1,37 @@
+{
+  "status": "configured, not yet solved",
+  "source_mesh": "openfoam/nist3d/pilot-smooth",
+  "source_mesh_sha256": {
+    "points": "3019060eeed5abdf0e67bca1ca4ad800ff3403f69026aeeaeea04ed72b7ba6bc",
+    "faces": "67bbb4864767110d8a913d20131e204be92d9789aa6908ad763eea46b611d6ed",
+    "boundary": "01a93c0070ebb1b7cca2da2f267bf910959a1a33f117711601fedce553d9a0c0",
+    "owner": "33199f48a208a5d34402b11a221704cd10765297a2f863b6074fc14b7434a215",
+    "neighbour": "0004d841c48c40fbe87116e3a6e2f0b47206d8f1ac3dce5f801e71d63cb760b7"
+  },
+  "mesh_disposition": "Bounded flow pilot permitted after spatial and face-plane inspection. 76 strict concavity warnings remain; quality dictionary passes unchanged. No mesh-independent accuracy claim.",
+  "concavity_evidence": "openfoam/nist3d/pilot-smooth/concavity-review/measurements.json",
+  "solver": "simpleFoam",
+  "processes": 8,
+  "initial_iteration_budget": 600,
+  "nu_m2_per_s": 0.00018347793071574938,
+  "Q_each_inlet_m3_per_s": 1.332313591094753e-05,
+  "rho_kg_per_m3": 0.11723126,
+  "temperature_K": 383.15,
+  "operating_absolute_pressure_Pa": 13332,
+  "assumptions": [
+    "uniform temperature",
+    "constant density",
+    "laminar Newtonian",
+    "no gravity/buoyancy",
+    "stationary no-slip solids",
+    "steady carrier pilot; no tracer yet"
+  ],
+  "screening_before_quantitative_use": {
+    "net_flux_relative_error_max": 1e-05,
+    "outlet_reverse_flux_fraction_max": 1e-06,
+    "maximum_Mach_max": 0.1,
+    "max_absolute_pressure_deviation_over_operating_max": 0.01,
+    "late_max_velocity_change_over_inlet_mean_max": 0.001,
+    "note": "Project pilot criteria only. Field settling and residual history are both reviewed. Mesh sensitivity and physical validation remain outstanding."
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "status": "proposed geometry for review; not a mesh or validated replica",
+  "units": "mm",
+  "source": "Kimes, Moore and Maslar (2012), DOI 10.1063/1.4742991, Section II and Figures 1-4",
+  "coordinates": "Right-handed Cartesian system. z=0 at cone top; z increases upwards; main flow is toward negative z. x=y=0 on chamber axis.",
+  "cone": {"z_top": 0, "z_bottom": -110, "radius_top": 25, "radius_bottom": 51, "provenance": "reported dimensions; coordinates assigned"},
+  "junction": {"z_top": -110, "z_bottom": -111, "radius": 51, "provenance": "paper estimates 1 mm junction gap; modelled as straight bore"},
+  "body": {"z_top": -111, "z_bottom": -530, "radius": 51, "provenance": "419 mm reported body length, 102 mm bore; position derived using estimated junction gap"},
+  "inlets": {
+    "radius": 2.4,
+    "z_chamber": 0,
+    "z_boundary": 10,
+    "centres_xy": [[16, 0], [0, 16], [-16, 0], [0, -16]],
+    "names": ["inlet1", "inlet2", "inlet3", "inlet4"],
+    "provenance": "approximately 4.8 mm ID on 32 mm pitch circle reported; angular origin chosen; 10 mm tube length assumed"
+  },
+  "wafer": {"radius": 25, "z": -158, "provenance": "50 mm wafer reported; support-top elevation inferred from diagnostic centre; flush, zero-thickness wafer boundary assumed"},
+  "support_sections": [
+    {"name": "wafer boat envelope", "radius": 33, "z_top": -158, "z_bottom": -187, "provenance": "66 mm diameter and 29 mm boat height reported; flat cylinder replaces recessed underside"},
+    {"name": "upper housing envelope", "radius": 33, "z_top": -187, "z_bottom": -206, "provenance": "66 mm diameter and 19 mm housing height reported; stacking directly under boat is assumed; mounting cone overlap omitted"},
+    {"name": "smooth bellows envelope", "radius": 38, "z_top": -206, "z_bottom": -306, "provenance": "76 mm bellows diameter reported; smooth cylinder and 100 mm axial span assumed"},
+    {"name": "lower stem envelope", "radius": 17, "z_top": -306, "z_bottom": -530, "provenance": "34 mm adapter outer diameter and 224 mm tube length reported; placement to bottom plane assumed; flanges omitted"}
+  ],
+  "outlets": {
+    "radius": 8,
+    "z_chamber": -530,
+    "z_boundary": -540,
+    "centres_xy": [[35, 0], [-35, 0]],
+    "names": ["outlet1", "outlet2"],
+    "provenance": "16 mm nominal exhaust ID reported; exact circular diameter representation, centres, orientation and 10 mm extensions assumed"
+  },
+  "measurement": {"radius": 25, "z": -156, "provenance": "proposed sampling disc 2 mm above wafer; not a solid or boundary"},
+  "omitted": ["diagnostic ports and recesses", "heater internals", "bellows corrugations", "mounting-cone detail", "external solid walls", "flanges", "O-rings", "wafer thickness"],
+  "operating_point_file": "physics/nist-3d/operating-point.json",
+  "not_defined_yet": ["final solver dictionaries", "inlet-profile sensitivity", "mesh resolution", "acceptance of downstream geometry approximations"]
+}

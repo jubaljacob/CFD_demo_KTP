@@ -7,3 +7,10 @@ dist/
 .codex/
 .agents/
 *.log
+!README.md
+simulation-runs/
+.venv-simulation/
+__pycache__/
+*.pyc
+**/processor*/
+**/dynamicCode/

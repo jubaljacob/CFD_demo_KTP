@@ -1,0 +1,2 @@
+Temperature (K)	Pressure (bar)	Density (kg/m3)	Volume (m3/kg)	Internal Energy (kJ/kg)	Enthalpy (kJ/kg)	Entropy (J/g*K)	Cv (J/g*K)	Cp (J/g*K)	Sound Spd. (m/s)	Joule-Thomson (K/bar)	Viscosity (Pa*s)	Therm. Cond. (W/m*K)	Phase
+383.15000	0.13332000	0.11723126	8.5301478	284.23567	397.95960	7.6989990	0.74614103	1.0430470	398.72561	0.11532646	2.1509349e-05	0.031679758	vapor

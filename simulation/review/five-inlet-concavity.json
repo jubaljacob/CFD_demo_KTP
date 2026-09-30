@@ -1,0 +1,1074 @@
+{
+  "meaning": "Diagnostic measurements, not a new mesh-quality pass. Original convexity warnings remain.",
+  "flagged_cell_count": 76,
+  "all_flagged_volumes_positive": true,
+  "all_flagged_centres_inside_each_face_plane": true,
+  "max_relative_protrusion": 0.050420429819350306,
+  "max_absolute_protrusion_m": 0.00010808565665236483,
+  "records": [
+    {
+      "cell_id": 60039,
+      "centre_m": [
+        -0.04735208832120277,
+        -0.013177505393260246,
+        -0.5249610300535208
+      ],
+      "volume_m3": 9.851096317570975e-09,
+      "max_face_plane_protrusion_m": 0.00010808565665236483,
+      "max_protrusion_over_cuberoot_volume": 0.050420429819350306,
+      "max_positive_face_plane_cosine": 0.06389084192363402,
+      "min_centre_inside_face_plane_distance_m": 0.0010066399966763894,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 60151,
+      "centre_m": [
+        0.04735220850923559,
+        -0.013177901540056677,
+        -0.5249613064935931
+      ],
+      "volume_m3": 9.851826447536876e-09,
+      "max_face_plane_protrusion_m": 0.00010808028490377242,
+      "max_protrusion_over_cuberoot_volume": 0.05041667843412162,
+      "max_positive_face_plane_cosine": 0.0638874116884498,
+      "min_centre_inside_face_plane_distance_m": 0.001006544465646527,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 60633,
+      "centre_m": [
+        0.0473520857962686,
+        0.013177952035385698,
+        -0.5249612970630217
+      ],
+      "volume_m3": 9.852158712529203e-09,
+      "max_face_plane_protrusion_m": 0.00010806382235710018,
+      "max_protrusion_over_cuberoot_volume": 0.050408432389562614,
+      "max_positive_face_plane_cosine": 0.0638781160234929,
+      "min_centre_inside_face_plane_distance_m": 0.0010066431477459095,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 60523,
+      "centre_m": [
+        -0.0473517869445601,
+        0.013177493739325878,
+        -0.5249609715167555
+      ],
+      "volume_m3": 9.853321401721506e-09,
+      "max_face_plane_protrusion_m": 0.00010805823439395943,
+      "max_protrusion_over_cuberoot_volume": 0.05040384307503167,
+      "max_positive_face_plane_cosine": 0.06387388870000456,
+      "min_centre_inside_face_plane_distance_m": 0.0010068637814988279,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 59218,
+      "centre_m": [
+        0.01318381054111833,
+        -0.04732204822233077,
+        -0.5249587012996234
+      ],
+      "volume_m3": 9.803420223855227e-09,
+      "max_face_plane_protrusion_m": 0.00010750965167432447,
+      "max_protrusion_over_cuberoot_volume": 0.050232899679993295,
+      "max_positive_face_plane_cosine": 0.0635727746322423,
+      "min_centre_inside_face_plane_distance_m": 0.001017229425354865,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 59184,
+      "centre_m": [
+        -0.013183845860238588,
+        -0.04732204587131498,
+        -0.5249587075248311
+      ],
+      "volume_m3": 9.803240636765507e-09,
+      "max_face_plane_protrusion_m": 0.00010750830366665896,
+      "max_protrusion_over_cuberoot_volume": 0.05023257657147733,
+      "max_positive_face_plane_cosine": 0.0635720616712891,
+      "min_centre_inside_face_plane_distance_m": 0.001017232171159156,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 61476,
+      "centre_m": [
+        -0.013184197934019457,
+        0.04732217508312519,
+        -0.5249589245823741
+      ],
+      "volume_m3": 9.8043971089065e-09,
+      "max_face_plane_protrusion_m": 0.00010750554403855849,
+      "max_protrusion_over_cuberoot_volume": 0.05022931207393552,
+      "max_positive_face_plane_cosine": 0.06357029271722854,
+      "min_centre_inside_face_plane_distance_m": 0.0010171362613797395,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 61510,
+      "centre_m": [
+        0.013184203069524064,
+        0.04732219905947519,
+        -0.5249589222459228
+      ],
+      "volume_m3": 9.804267842575463e-09,
+      "max_face_plane_protrusion_m": 0.00010750335782854187,
+      "max_protrusion_over_cuberoot_volume": 0.050228511368609466,
+      "max_positive_face_plane_cosine": 0.06356902974780218,
+      "min_centre_inside_face_plane_distance_m": 0.001017116278585695,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 50607,
+      "centre_m": [
+        0.023435415445567185,
+        -0.008405719787066807,
+        -0.0005407826744702461
+      ],
+      "volume_m3": 3.384890201294193e-10,
+      "max_face_plane_protrusion_m": 3.3958244804672724e-05,
+      "max_protrusion_over_cuberoot_volume": 0.048726330463179854,
+      "max_positive_face_plane_cosine": 0.06225415278083977,
+      "min_centre_inside_face_plane_distance_m": 0.00019631967472042203,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 50823,
+      "centre_m": [
+        -0.008405719675816426,
+        0.023435415454208273,
+        -0.0005407826986903843
+      ],
+      "volume_m3": 3.384890983871121e-10,
+      "max_face_plane_protrusion_m": 3.395824304370199e-05,
+      "max_protrusion_over_cuberoot_volume": 0.04872632418125275,
+      "max_positive_face_plane_cosine": 0.06225414552690952,
+      "min_centre_inside_face_plane_distance_m": 0.00019631971992729717,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 50746,
+      "centre_m": [
+        -0.023433166449109245,
+        0.008397762203303384,
+        -0.00054905414358851
+      ],
+      "volume_m3": 3.5028245034137347e-10,
+      "max_face_plane_protrusion_m": 3.405187642960118e-05,
+      "max_protrusion_over_cuberoot_volume": 0.04830605694896169,
+      "max_positive_face_plane_cosine": 0.062340463015375026,
+      "min_centre_inside_face_plane_distance_m": 0.00020319208939953654,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 50508,
+      "centre_m": [
+        -0.008397762646318613,
+        -0.023433167196170446,
+        -0.0005490543202028288
+      ],
+      "volume_m3": 3.5028130994096e-10,
+      "max_face_plane_protrusion_m": 3.405104479982473e-05,
+      "max_protrusion_over_cuberoot_volume": 0.04830492961889801,
+      "max_positive_face_plane_cosine": 0.062339004200657064,
+      "min_centre_inside_face_plane_distance_m": 0.00020319132264758283,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 50527,
+      "centre_m": [
+        0.008397762532309224,
+        -0.023433167200821097,
+        -0.0005490543425870676
+      ],
+      "volume_m3": 3.5028139285891424e-10,
+      "max_face_plane_protrusion_m": 3.4051047299497296e-05,
+      "max_protrusion_over_cuberoot_volume": 0.04830492935339078,
+      "max_positive_face_plane_cosine": 0.062339005265496336,
+      "min_centre_inside_face_plane_distance_m": 0.00020319137186266517,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 50601,
+      "centre_m": [
+        -0.023433167203253585,
+        -0.00839776253894289,
+        -0.0005490543374858115
+      ],
+      "volume_m3": 3.502813850616541e-10,
+      "max_face_plane_protrusion_m": 3.4051042481042463e-05,
+      "max_protrusion_over_cuberoot_volume": 0.04830492287633703,
+      "max_positive_face_plane_cosine": 0.0623389967176766,
+      "min_centre_inside_face_plane_distance_m": 0.000203191366085665,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 50842,
+      "centre_m": [
+        0.00839392459671017,
+        0.023432265506144325,
+        -0.0005440749295539623
+      ],
+      "volume_m3": 3.505767276785514e-10,
+      "max_face_plane_protrusion_m": 3.273672779100534e-05,
+      "max_protrusion_over_cuberoot_volume": 0.04642738677823219,
+      "max_positive_face_plane_cosine": 0.05994134567771104,
+      "min_centre_inside_face_plane_distance_m": 0.00020379546954082256,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 50752,
+      "centre_m": [
+        0.023432265510528613,
+        0.00839392450419984,
+        -0.0005440749353997784
+      ],
+      "volume_m3": 3.5057678529036774e-10,
+      "max_face_plane_protrusion_m": 3.273672847959797e-05,
+      "max_protrusion_over_cuberoot_volume": 0.04642738521159225,
+      "max_positive_face_plane_cosine": 0.0599413441465593,
+      "min_centre_inside_face_plane_distance_m": 0.00020379550837195962,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 51389,
+      "centre_m": [
+        -0.045236953721614806,
+        -0.019161919103764226,
+        -0.5249640871717441
+      ],
+      "volume_m3": 9.65581092854839e-09,
+      "max_face_plane_protrusion_m": 5.732743027210148e-05,
+      "max_protrusion_over_cuberoot_volume": 0.026921518781407403,
+      "max_positive_face_plane_cosine": 0.034044167539367336,
+      "min_centre_inside_face_plane_distance_m": 0.0009983828243984951,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 51813,
+      "centre_m": [
+        -0.04523699344013745,
+        0.01916194334747017,
+        -0.5249640781498297
+      ],
+      "volume_m3": 9.655633233438741e-09,
+      "max_face_plane_protrusion_m": 5.7293649403799434e-05,
+      "max_protrusion_over_cuberoot_volume": 0.026905820006681735,
+      "max_positive_face_plane_cosine": 0.03402396333208506,
+      "min_centre_inside_face_plane_distance_m": 0.0009983741521199325,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 51293,
+      "centre_m": [
+        0.019162613559081956,
+        -0.045237974242092055,
+        -0.5249679045021496
+      ],
+      "volume_m3": 9.64011132138913e-09,
+      "max_face_plane_protrusion_m": 5.726091816532535e-05,
+      "max_protrusion_over_cuberoot_volume": 0.026904873712231266,
+      "max_positive_face_plane_cosine": 0.033985339389465644,
+      "min_centre_inside_face_plane_distance_m": 0.0009972379834059706,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 51287,
+      "centre_m": [
+        -0.019162631053228425,
+        -0.04523799509194198,
+        -0.5249679260593155
+      ],
+      "volume_m3": 9.63985381540161e-09,
+      "max_face_plane_protrusion_m": 5.725911034801977e-05,
+      "max_protrusion_over_cuberoot_volume": 0.026904263840103,
+      "max_positive_face_plane_cosine": 0.03398428404915951,
+      "min_centre_inside_face_plane_distance_m": 0.0009972196089475755,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 51414,
+      "centre_m": [
+        0.0452401108425384,
+        -0.019155235486343392,
+        -0.5249651892502788
+      ],
+      "volume_m3": 9.655768045483573e-09,
+      "max_face_plane_protrusion_m": 4.331540200178298e-05,
+      "max_protrusion_over_cuberoot_volume": 0.020341364147863413,
+      "max_positive_face_plane_cosine": 0.025308914263096262,
+      "min_centre_inside_face_plane_distance_m": 0.0009932904351712477,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 51840,
+      "centre_m": [
+        0.045240464366180635,
+        0.01915527041235952,
+        -0.5249652251280212
+      ],
+      "volume_m3": 9.652508868772836e-09,
+      "max_face_plane_protrusion_m": 4.331028871507339e-05,
+      "max_protrusion_over_cuberoot_volume": 0.02034125179279947,
+      "max_positive_face_plane_cosine": 0.02530598803338862,
+      "min_centre_inside_face_plane_distance_m": 0.0009929808197401508,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 51925,
+      "centre_m": [
+        -0.019156101914552998,
+        0.04524115178335862,
+        -0.5249689860981962
+      ],
+      "volume_m3": 9.63817032354954e-09,
+      "max_face_plane_protrusion_m": 4.328501316780786e-05,
+      "max_protrusion_over_cuberoot_volume": 0.02033945702844445,
+      "max_positive_face_plane_cosine": 0.025280396042834635,
+      "min_centre_inside_face_plane_distance_m": 0.0009921343694534817,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 51931,
+      "centre_m": [
+        0.019156129497669677,
+        0.045241511976785345,
+        -0.5249690132282182
+      ],
+      "volume_m3": 9.634934074995548e-09,
+      "max_face_plane_protrusion_m": 4.3279570777344785e-05,
+      "max_protrusion_over_cuberoot_volume": 0.020339176382091186,
+      "max_positive_face_plane_cosine": 0.025277270436878104,
+      "min_centre_inside_face_plane_distance_m": 0.0009918195123333382,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 51915,
+      "centre_m": [
+        0.027212017709637385,
+        0.04125420359435897,
+        -0.5250180396473144
+      ],
+      "volume_m3": 9.682291990875436e-09,
+      "max_face_plane_protrusion_m": 3.4660554099692504e-05,
+      "max_protrusion_over_cuberoot_volume": 0.016262080606064624,
+      "max_positive_face_plane_cosine": 0.029880991217801463,
+      "min_centre_inside_face_plane_distance_m": 0.0010351032639538842,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 51859,
+      "centre_m": [
+        0.04125411044460929,
+        0.027211889592414294,
+        -0.5250176792437309
+      ],
+      "volume_m3": 9.684572690169557e-09,
+      "max_face_plane_protrusion_m": 3.466080530734206e-05,
+      "max_protrusion_over_cuberoot_volume": 0.0162609217950067,
+      "max_positive_face_plane_cosine": 0.02988003068835175,
+      "min_centre_inside_face_plane_distance_m": 0.0010351407257119267,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 281292,
+      "centre_m": [
+        0.023192611163175815,
+        0.04326663172880791,
+        -0.5249574126572979
+      ],
+      "volume_m3": 9.590030686754436e-09,
+      "max_face_plane_protrusion_m": 2.7222703118379144e-05,
+      "max_protrusion_over_cuberoot_volume": 0.01281320913350282,
+      "max_positive_face_plane_cosine": 0.016291603487080496,
+      "min_centre_inside_face_plane_distance_m": 0.0010111285028531188,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 281198,
+      "centre_m": [
+        0.043266325830562044,
+        0.023192250443123712,
+        -0.5249561221313565
+      ],
+      "volume_m3": 9.596699726708494e-09,
+      "max_face_plane_protrusion_m": 2.718470603537816e-05,
+      "max_protrusion_over_cuberoot_volume": 0.012792359987569325,
+      "max_positive_face_plane_cosine": 0.01627056331640937,
+      "min_centre_inside_face_plane_distance_m": 0.001011428504060743,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 281284,
+      "centre_m": [
+        -0.023203617951159487,
+        0.04325141765511398,
+        -0.524968093560989
+      ],
+      "volume_m3": 9.941095337510168e-09,
+      "max_face_plane_protrusion_m": 2.6505105457695952e-05,
+      "max_protrusion_over_cuberoot_volume": 0.012326831427062306,
+      "max_positive_face_plane_cosine": 0.01577381844277211,
+      "min_centre_inside_face_plane_distance_m": 0.0010476837315016847,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 280267,
+      "centre_m": [
+        0.043251115750698406,
+        -0.02320323966208189,
+        -0.524966855490585
+      ],
+      "volume_m3": 9.947731783929273e-09,
+      "max_face_plane_protrusion_m": 2.647364114340993e-05,
+      "max_protrusion_over_cuberoot_volume": 0.012309459635968432,
+      "max_positive_face_plane_cosine": 0.015756706783815497,
+      "min_centre_inside_face_plane_distance_m": 0.0010480691044833903,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 280182,
+      "centre_m": [
+        0.0231992649811843,
+        -0.043262889056361276,
+        -0.5249639921352341
+      ],
+      "volume_m3": 9.835641837947681e-09,
+      "max_face_plane_protrusion_m": 2.4694068076560927e-05,
+      "max_protrusion_over_cuberoot_volume": 0.011525463663488446,
+      "max_positive_face_plane_cosine": 0.01469847028557713,
+      "min_centre_inside_face_plane_distance_m": 0.0010519858094441199,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 281190,
+      "centre_m": [
+        -0.04326257196946481,
+        0.023198917826476113,
+        -0.5249627468467567
+      ],
+      "volume_m3": 9.842602717584351e-09,
+      "max_face_plane_protrusion_m": 2.466179865410151e-05,
+      "max_protrusion_over_cuberoot_volume": 0.011507688454347352,
+      "max_positive_face_plane_cosine": 0.014680748725862074,
+      "min_centre_inside_face_plane_distance_m": 0.0010523503789747462,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 280174,
+      "centre_m": [
+        -0.023200586021072403,
+        -0.043263144276129026,
+        -0.5249665002519857
+      ],
+      "volume_m3": 9.819980368795889e-09,
+      "max_face_plane_protrusion_m": 2.0526440844401714e-05,
+      "max_protrusion_over_cuberoot_volume": 0.009585397160536479,
+      "max_positive_face_plane_cosine": 0.012216978929450404,
+      "min_centre_inside_face_plane_distance_m": 0.0010517237306422122,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 280259,
+      "centre_m": [
+        -0.043262846317572747,
+        -0.023200247842141596,
+        -0.5249652469584514
+      ],
+      "volume_m3": 9.826869904754023e-09,
+      "max_face_plane_protrusion_m": 2.0493457420734043e-05,
+      "max_protrusion_over_cuberoot_volume": 0.009567757622108873,
+      "max_positive_face_plane_cosine": 0.012198572123229685,
+      "min_centre_inside_face_plane_distance_m": 0.0010520848712651596,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 51854,
+      "centre_m": [
+        -0.041248803096765575,
+        0.027227278438315242,
+        -0.5250147149740362
+      ],
+      "volume_m3": 9.677093421786926e-09,
+      "max_face_plane_protrusion_m": 1.7380763177410428e-05,
+      "max_protrusion_over_cuberoot_volume": 0.008156187433444099,
+      "max_positive_face_plane_cosine": 0.015058009862276456,
+      "min_centre_inside_face_plane_distance_m": 0.0010482156109950626,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 51313,
+      "centre_m": [
+        0.02722739057789317,
+        -0.041248897080453394,
+        -0.5250150471162325
+      ],
+      "volume_m3": 9.675027462613226e-09,
+      "max_face_plane_protrusion_m": 1.73740255981848e-05,
+      "max_protrusion_over_cuberoot_volume": 0.008153606000027683,
+      "max_positive_face_plane_cosine": 0.01505260914146994,
+      "min_centre_inside_face_plane_distance_m": 0.0010481729736783615,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 51374,
+      "centre_m": [
+        0.041251295427631,
+        -0.02721722994172135,
+        -0.5250147551380311
+      ],
+      "volume_m3": 9.701199070865388e-09,
+      "max_face_plane_protrusion_m": 1.628445852539534e-05,
+      "max_protrusion_over_cuberoot_volume": 0.0076353951352042555,
+      "max_positive_face_plane_cosine": 0.014044671190944475,
+      "min_centre_inside_face_plane_distance_m": 0.0010424358759187255,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 51909,
+      "centre_m": [
+        -0.027217342736088338,
+        0.04125137624723859,
+        -0.5250150770213665
+      ],
+      "volume_m3": 9.699245068933063e-09,
+      "max_face_plane_protrusion_m": 1.6275987900049772e-05,
+      "max_protrusion_over_cuberoot_volume": 0.007631935899547583,
+      "max_positive_face_plane_cosine": 0.014037875239157668,
+      "min_centre_inside_face_plane_distance_m": 0.0010424048761717506,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 51916,
+      "centre_m": [
+        0.025116118907172445,
+        0.04318378139773504,
+        -0.5249522334189586
+      ],
+      "volume_m3": 8.464995845881922e-09,
+      "max_face_plane_protrusion_m": 1.524365405903251e-05,
+      "max_protrusion_over_cuberoot_volume": 0.007479630912774814,
+      "max_positive_face_plane_cosine": 0.014086602756273972,
+      "min_centre_inside_face_plane_distance_m": 0.000902238224421443,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 51858,
+      "centre_m": [
+        0.043183683164203436,
+        0.02511600687966596,
+        -0.5249518854644798
+      ],
+      "volume_m3": 8.467192545223489e-09,
+      "max_face_plane_protrusion_m": 1.5241575349795769e-05,
+      "max_protrusion_over_cuberoot_volume": 0.007477964151160639,
+      "max_positive_face_plane_cosine": 0.01408494076313599,
+      "min_centre_inside_face_plane_distance_m": 0.0009023037610193172,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 51900,
+      "centre_m": [
+        0.02926382676431844,
+        0.03931355462922334,
+        -0.5249650662598078
+      ],
+      "volume_m3": 9.862331149965845e-09,
+      "max_face_plane_protrusion_m": 1.0775421834500738e-05,
+      "max_protrusion_over_cuberoot_volume": 0.0050246724247963335,
+      "max_positive_face_plane_cosine": 0.006170222067628652,
+      "min_centre_inside_face_plane_distance_m": 0.001018516570246545,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 51874,
+      "centre_m": [
+        0.03931351151499704,
+        0.02926373895209138,
+        -0.524964779583576
+      ],
+      "volume_m3": 9.864115330675876e-09,
+      "max_face_plane_protrusion_m": 1.077577809277816e-05,
+      "max_protrusion_over_cuberoot_volume": 0.005024535575451869,
+      "max_positive_face_plane_cosine": 0.006170556260222252,
+      "min_centre_inside_face_plane_distance_m": 0.0010185740397320767,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 51894,
+      "centre_m": [
+        -0.02926437110440843,
+        0.03931297708440308,
+        -0.5249648939063569
+      ],
+      "volume_m3": 9.858569518578127e-09,
+      "max_face_plane_protrusion_m": 1.0752898307772807e-05,
+      "max_protrusion_over_cuberoot_volume": 0.005014807163087555,
+      "max_positive_face_plane_cosine": 0.006158951823895796,
+      "min_centre_inside_face_plane_distance_m": 0.0010184773021650526,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 51360,
+      "centre_m": [
+        0.03931293438626222,
+        -0.029264294380928157,
+        -0.5249646356858897
+      ],
+      "volume_m3": 9.860191933115233e-09,
+      "max_face_plane_protrusion_m": 1.0750467764653282e-05,
+      "max_protrusion_over_cuberoot_volume": 0.0050133986341548975,
+      "max_positive_face_plane_cosine": 0.006157686523738854,
+      "min_centre_inside_face_plane_distance_m": 0.0010185343803402393,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 281243,
+      "centre_m": [
+        0.035097170669684714,
+        0.035096995088337045,
+        -0.5250142357355932
+      ],
+      "volume_m3": 8.52051740452051e-09,
+      "max_face_plane_protrusion_m": 9.358714756617527e-06,
+      "max_protrusion_over_cuberoot_volume": 0.004582061226438613,
+      "max_positive_face_plane_cosine": 0.009208242564213764,
+      "min_centre_inside_face_plane_distance_m": 0.0010011390486438564,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 281235,
+      "centre_m": [
+        -0.03509706324730045,
+        0.03509712607110129,
+        -0.525014253378047
+      ],
+      "volume_m3": 8.520312874441285e-09,
+      "max_face_plane_protrusion_m": 9.358174452347422e-06,
+      "max_protrusion_over_cuberoot_volume": 0.004581833353188143,
+      "max_positive_face_plane_cosine": 0.009208087163849504,
+      "min_centre_inside_face_plane_distance_m": 0.0010011661217004086,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 280219,
+      "centre_m": [
+        0.035097012281899535,
+        -0.03509717830915588,
+        -0.5250142533809573
+      ],
+      "volume_m3": 8.520303330993933e-09,
+      "max_face_plane_protrusion_m": 9.356886548137328e-06,
+      "max_protrusion_over_cuberoot_volume": 0.00458120449593806,
+      "max_positive_face_plane_cosine": 0.009206490610135355,
+      "min_centre_inside_face_plane_distance_m": 0.0010011415466553986,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 51330,
+      "centre_m": [
+        0.029266876632525446,
+        -0.0393119749913806,
+        -0.5249639353663875
+      ],
+      "volume_m3": 9.841139253128613e-09,
+      "max_face_plane_protrusion_m": 9.653982011134313e-06,
+      "max_protrusion_over_cuberoot_volume": 0.004504964360084421,
+      "max_positive_face_plane_cosine": 0.005536818079438746,
+      "min_centre_inside_face_plane_distance_m": 0.0010189293797728198,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 51866,
+      "centre_m": [
+        -0.039311923720863055,
+        0.029266791155580518,
+        -0.5249636660170967
+      ],
+      "volume_m3": 9.842922093287668e-09,
+      "max_face_plane_protrusion_m": 9.651695038145804e-06,
+      "max_protrusion_over_cuberoot_volume": 0.0045036252144078845,
+      "max_positive_face_plane_cosine": 0.0055356176052180316,
+      "min_centre_inside_face_plane_distance_m": 0.0010189940237532356,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 280211,
+      "centre_m": [
+        -0.035096482657429956,
+        -0.03509641331160116,
+        -0.5250136307350052
+      ],
+      "volume_m3": 8.53186718433362e-09,
+      "max_face_plane_protrusion_m": 7.343495446642443e-06,
+      "max_protrusion_over_cuberoot_volume": 0.0035938074214754675,
+      "max_positive_face_plane_cosine": 0.007219574524576789,
+      "min_centre_inside_face_plane_distance_m": 0.001001781557786484,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 51324,
+      "centre_m": [
+        -0.029265495489267032,
+        -0.03931025916119733,
+        -0.5249642188197521
+      ],
+      "volume_m3": 9.836483716993309e-09,
+      "max_face_plane_protrusion_m": 5.847264210298808e-06,
+      "max_protrusion_over_cuberoot_volume": 0.0027290160647171595,
+      "max_positive_face_plane_cosine": 0.003351795875375618,
+      "min_centre_inside_face_plane_distance_m": 0.0010185000151859,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 51352,
+      "centre_m": [
+        -0.03931022105682063,
+        -0.029265395807256393,
+        -0.5249639583710007
+      ],
+      "volume_m3": 9.838130626185524e-09,
+      "max_face_plane_protrusion_m": 5.843123155082627e-06,
+      "max_protrusion_over_cuberoot_volume": 0.0027269311846347647,
+      "max_positive_face_plane_cosine": 0.003349487026792803,
+      "min_centre_inside_face_plane_distance_m": 0.0010185543196793696,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 265149,
+      "centre_m": [
+        0.022374523692988032,
+        0.01342114940885445,
+        -0.005566405502184651
+      ],
+      "volume_m3": 4.768097563033388e-10,
+      "max_face_plane_protrusion_m": 4.2766168209668867e-07,
+      "max_protrusion_over_cuberoot_volume": 0.0005474174392388338,
+      "max_positive_face_plane_cosine": 0.0007006108437122746,
+      "min_centre_inside_face_plane_distance_m": 0.000214860201060097,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 265206,
+      "centre_m": [
+        -0.013421148034916995,
+        0.022374522609071225,
+        -0.005566406133791053
+      ],
+      "volume_m3": 4.768133049610377e-10,
+      "max_face_plane_protrusion_m": 4.2766036288671575e-07,
+      "max_protrusion_over_cuberoot_volume": 0.0005474143925768024,
+      "max_positive_face_plane_cosine": 0.0007006087128506972,
+      "min_centre_inside_face_plane_distance_m": 0.00021486193365844185,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 265043,
+      "centre_m": [
+        0.013421148417925317,
+        -0.022374524612063615,
+        -0.005566406385481367
+      ],
+      "volume_m3": 4.768099078864177e-10,
+      "max_face_plane_protrusion_m": 4.2765831237753923e-07,
+      "max_protrusion_over_cuberoot_volume": 0.0005474130679061541,
+      "max_positive_face_plane_cosine": 0.0007006051183503714,
+      "min_centre_inside_face_plane_distance_m": 0.00021486011778502927,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 265100,
+      "centre_m": [
+        -0.022374524430551195,
+        -0.013421148289073313,
+        -0.0055664064917575655
+      ],
+      "volume_m3": 4.768104084674959e-10,
+      "max_face_plane_protrusion_m": 4.2765830887367225e-07,
+      "max_protrusion_over_cuberoot_volume": 0.0005474128718532108,
+      "max_positive_face_plane_cosine": 0.000700605112683534,
+      "min_centre_inside_face_plane_distance_m": 0.000214860357808643,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 265215,
+      "centre_m": [
+        0.013421148491274895,
+        0.022374523915506855,
+        -0.005566405708521384
+      ],
+      "volume_m3": 4.768105071029129e-10,
+      "max_face_plane_protrusion_m": 4.2765781755322425e-07,
+      "max_protrusion_over_cuberoot_volume": 0.0005474122052044588,
+      "max_positive_face_plane_cosine": 0.0007006045078593487,
+      "min_centre_inside_face_plane_distance_m": 0.00021486056512044305,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 265123,
+      "centre_m": [
+        0.02237452275734685,
+        -0.013421148042178269,
+        -0.005566406110242252
+      ],
+      "volume_m3": 4.768130782485014e-10,
+      "max_face_plane_protrusion_m": 4.2765639653354347e-07,
+      "max_protrusion_over_cuberoot_volume": 0.0005474094023198221,
+      "max_positive_face_plane_cosine": 0.0007006022104652412,
+      "min_centre_inside_face_plane_distance_m": 0.00021486185182915322,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 265034,
+      "centre_m": [
+        -0.013421148251777744,
+        -0.022374525195729078,
+        -0.0055664062738339185
+      ],
+      "volume_m3": 4.768090573830286e-10,
+      "max_face_plane_protrusion_m": 4.276544127373934e-07,
+      "max_protrusion_over_cuberoot_volume": 0.0005474084017493789,
+      "max_positive_face_plane_cosine": 0.0007005987250646746,
+      "min_centre_inside_face_plane_distance_m": 0.00021485973586870684,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 265126,
+      "centre_m": [
+        -0.02237452474617026,
+        0.013421148351897111,
+        -0.005566406390728352
+      ],
+      "volume_m3": 4.768097888854019e-10,
+      "max_face_plane_protrusion_m": 4.2765429852524277e-07,
+      "max_protrusion_over_cuberoot_volume": 0.0005474079756175787,
+      "max_positive_face_plane_cosine": 0.0007005985402522193,
+      "min_centre_inside_face_plane_distance_m": 0.00021486009054016669,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 132923,
+      "centre_m": [
+        -0.008759041805224911,
+        -0.02471269882388418,
+        -0.0070802853259817455
+      ],
+      "volume_m3": 3.890574934945889e-09,
+      "max_face_plane_protrusion_m": 4.404323217797098e-07,
+      "max_protrusion_over_cuberoot_volume": 0.00028003216709713966,
+      "max_positive_face_plane_cosine": 0.0003506790759869594,
+      "min_centre_inside_face_plane_distance_m": 0.00043545123377739285,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 133106,
+      "centre_m": [
+        -0.024712698244414036,
+        0.00875904145036638,
+        -0.007080285586675292
+      ],
+      "volume_m3": 3.890580973058903e-09,
+      "max_face_plane_protrusion_m": 4.404319198528253e-07,
+      "max_protrusion_over_cuberoot_volume": 0.00028003176667892274,
+      "max_positive_face_plane_cosine": 0.00035067876313834987,
+      "min_centre_inside_face_plane_distance_m": 0.0004354519380673188,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 48214,
+      "centre_m": [
+        0.008759054881209824,
+        0.024712664259485404,
+        -0.00708036671812961
+      ],
+      "volume_m3": 3.891063896134437e-09,
+      "max_face_plane_protrusion_m": 4.4042664567369447e-07,
+      "max_protrusion_over_cuberoot_volume": 0.00028001682796416143,
+      "max_positive_face_plane_cosine": 0.00035067435295127675,
+      "min_centre_inside_face_plane_distance_m": 0.0004354976374428082,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 133048,
+      "centre_m": [
+        0.02471265451599142,
+        -0.008759052611890089,
+        -0.007080358687521972
+      ],
+      "volume_m3": 3.891146435915046e-09,
+      "max_face_plane_protrusion_m": 4.4042493378379746e-07,
+      "max_protrusion_over_cuberoot_volume": 0.0002800137596388472,
+      "max_positive_face_plane_cosine": 0.000350672354292864,
+      "min_centre_inside_face_plane_distance_m": 0.00043550547862187655,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 132941,
+      "centre_m": [
+        0.0087589701410429,
+        -0.02471271904201823,
+        -0.007080292722786085
+      ],
+      "volume_m3": 3.890793672829674e-09,
+      "max_face_plane_protrusion_m": 4.4000207504395596e-07,
+      "max_protrusion_over_cuberoot_volume": 0.00027975336833431014,
+      "max_positive_face_plane_cosine": 0.0003503353456119794,
+      "min_centre_inside_face_plane_distance_m": 0.0004354570596067557,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 133034,
+      "centre_m": [
+        -0.024712718826144037,
+        -0.008758970340297483,
+        -0.007080292758087914
+      ],
+      "volume_m3": 3.890794791432346e-09,
+      "max_face_plane_protrusion_m": 4.400020282537543e-07,
+      "max_protrusion_over_cuberoot_volume": 0.0002797533117754171,
+      "max_positive_face_plane_cosine": 0.00035033530837009016,
+      "min_centre_inside_face_plane_distance_m": 0.00043545720483199527,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 48177,
+      "centre_m": [
+        0.02471268494282739,
+        0.008758984521997281,
+        -0.007080373663165126
+      ],
+      "volume_m3": 3.891274084884728e-09,
+      "max_face_plane_protrusion_m": 4.3999642437952727e-07,
+      "max_protrusion_over_cuberoot_volume": 0.0002797382626429386,
+      "max_positive_face_plane_cosine": 0.0003503306430654113,
+      "min_centre_inside_face_plane_distance_m": 0.00043550252484257337,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 133207,
+      "centre_m": [
+        -0.008758981195881551,
+        0.024712675271731935,
+        -0.007080365843939393
+      ],
+      "volume_m3": 3.891359872300508e-09,
+      "max_face_plane_protrusion_m": 4.399950186929555e-07,
+      "max_protrusion_over_cuberoot_volume": 0.0002797353132682946,
+      "max_positive_face_plane_cosine": 0.00035032888166745715,
+      "min_centre_inside_face_plane_distance_m": 0.00043551067668058706,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 475859,
+      "centre_m": [
+        0.015369089173630293,
+        -0.021412990087920004,
+        -0.006592640549281884
+      ],
+      "volume_m3": 4.244860184635889e-10,
+      "max_face_plane_protrusion_m": 1.5705936924007968e-11,
+      "max_protrusion_over_cuberoot_volume": 2.089822427240819e-08,
+      "max_positive_face_plane_cosine": 2.4486662005137914e-08,
+      "min_centre_inside_face_plane_distance_m": 0.0001931535131562419,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 476201,
+      "centre_m": [
+        0.0214129823996958,
+        0.015369091076635841,
+        -0.006592632619508279
+      ],
+      "volume_m3": 4.2449811604110447e-10,
+      "max_face_plane_protrusion_m": 1.566477985737516e-11,
+      "max_protrusion_over_cuberoot_volume": 2.0843262924904796e-08,
+      "max_positive_face_plane_cosine": 2.4422372267208542e-08,
+      "min_centre_inside_face_plane_distance_m": 0.00019315666857377267,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 380960,
+      "centre_m": [
+        -0.015369073701159603,
+        0.021412993740023797,
+        -0.006592631829037447
+      ],
+      "volume_m3": 4.2449193102559737e-10,
+      "max_face_plane_protrusion_m": 1.562538050608065e-11,
+      "max_protrusion_over_cuberoot_volume": 2.079093986182611e-08,
+      "max_positive_face_plane_cosine": 2.4361019320447968e-08,
+      "min_centre_inside_face_plane_distance_m": 0.00019315751395536393,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 475969,
+      "centre_m": [
+        -0.021412989079117182,
+        -0.015369088251571556,
+        -0.006592641480133465
+      ],
+      "volume_m3": 4.244893676996129e-10,
+      "max_face_plane_protrusion_m": 1.5614627836167336e-11,
+      "max_protrusion_over_cuberoot_volume": 2.077667431155942e-08,
+      "max_positive_face_plane_cosine": 2.4344304838319354e-08,
+      "min_centre_inside_face_plane_distance_m": 0.0001931550486672796,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 475802,
+      "centre_m": [
+        -0.015369070085832463,
+        -0.021413005270866925,
+        -0.006592638113125123
+      ],
+      "volume_m3": 4.244731016614165e-10,
+      "max_face_plane_protrusion_m": 0.0,
+      "max_protrusion_over_cuberoot_volume": 0.0,
+      "max_positive_face_plane_cosine": 0.0,
+      "min_centre_inside_face_plane_distance_m": 0.00019315194089811395,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 476134,
+      "centre_m": [
+        -0.02141299338136586,
+        0.015369084505921199,
+        -0.00659264032804776
+      ],
+      "volume_m3": 4.244838334650545e-10,
+      "max_face_plane_protrusion_m": 0.0,
+      "max_protrusion_over_cuberoot_volume": 0.0,
+      "max_positive_face_plane_cosine": 0.0,
+      "min_centre_inside_face_plane_distance_m": 0.00019315354790655785,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 476367,
+      "centre_m": [
+        0.01536906955646763,
+        0.02141299596467958,
+        -0.00659263209010378
+      ],
+      "volume_m3": 4.2449196992661774e-10,
+      "max_face_plane_protrusion_m": 0.0,
+      "max_protrusion_over_cuberoot_volume": 0.0,
+      "max_positive_face_plane_cosine": 0.0,
+      "min_centre_inside_face_plane_distance_m": 0.0001931581984154782,
+      "all_face_planes_contain_cell_centre": true
+    },
+    {
+      "cell_id": 380374,
+      "centre_m": [
+        0.021412996235348127,
+        -0.015369070632298703,
+        -0.006592631434641056
+      ],
+      "volume_m3": 4.2448984578682783e-10,
+      "max_face_plane_protrusion_m": 0.0,
+      "max_protrusion_over_cuberoot_volume": 0.0,
+      "max_positive_face_plane_cosine": 0.0,
+      "min_centre_inside_face_plane_distance_m": 0.00019315722021105887,
+      "all_face_planes_contain_cell_centre": true
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2512                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+FoamFile
+{
+    version         2;
+    format          ascii;
+    class           dictionary;
+    object          controlDict;
+}
+
+application     scalarTransportFoam;
+
+startFrom       startTime;
+
+startTime       0;
+
+stopAt          endTime;
+
+endTime         250;
+
+deltaT          0.025;
+
+adjustTimeStep  no;
+
+writeControl    timeStep;
+
+writeInterval   200;
+
+purgeWrite      0;
+
+writeFormat     ascii;
+
+writePrecision  12;
+
+writeCompression off;
+
+timeFormat      general;
+
+timePrecision   8;
+
+runTimeModifiable true;
+
+functions
+{
+    tracerBounds
+    {
+        type            fieldMinMax;
+        libs            ( fieldFunctionObjects );
+        fields          ( T );
+        mode            component;
+        location        false;
+        log             false;
+        writePrecision  12;
+        executeControl  timeStep;
+        executeInterval 1;
+        writeControl    timeStep;
+        writeInterval   1;
+    }
+    tracerInventory
+    {
+        type            volFieldValue;
+        libs            ( fieldFunctionObjects );
+        regionType      all;
+        operation       volIntegrate;
+        fields          ( T );
+        writeFields     false;
+        log             false;
+        writePrecision  12;
+        writeControl    timeStep;
+        writeInterval   1;
+    }
+    waferLine
+    {
+        type            sets;
+        libs            ( sampling );
+        interpolationScheme cellPoint;
+        setFormat       raw;
+        fields          ( T );
+        writeControl    timeStep;
+        writeInterval   40;
+        sets            ( aboveWafer { type uniform ; axis x ; start ( 0.02 0.002 0.0005 ) ; end ( 0.08 0.002 0.0005 ) ; nPoints 101 ; } );
+    }
+    inletTracerAdvection
+    {
+        type            surfaceFieldValue;
+        libs            ( fieldFunctionObjects );
+        regionType      patch;
+        name            inlet;
+        operation       weightedSum;
+        weightField     phi;
+        fields          ( T );
+        writeFields     false;
+        log             false;
+        writePrecision  12;
+        writeControl    timeStep;
+        writeInterval   1;
+    }
+    leftTracerAdvection
+    {
+        type            surfaceFieldValue;
+        libs            ( fieldFunctionObjects );
+        regionType      patch;
+        name            outletLeft;
+        operation       weightedSum;
+        weightField     phi;
+        fields          ( T );
+        writeFields     false;
+        log             false;
+        writePrecision  12;
+        writeControl    timeStep;
+        writeInterval   1;
+    }
+    rightTracerAdvection
+    {
+        type            surfaceFieldValue;
+        libs            ( fieldFunctionObjects );
+        regionType      patch;
+        name            outletRight;
+        operation       weightedSum;
+        weightField     phi;
+        fields          ( T );
+        writeFields     false;
+        log             false;
+        writePrecision  12;
+        writeControl    timeStep;
+        writeInterval   1;
+    }
+    inletAdjacentCells
+    {
+        type            probes;
+        libs            ( sampling );
+        fields          ( T );
+        interpolationScheme cell;
+        fixedLocations  true;
+        includeOutOfBounds true;
+        writePrecision  12;
+        writeControl    timeStep;
+        writeInterval   1;
+        probeLocations  ( ( 0.0455 0.0495 0.0005 ) ( 0.0465 0.0495 0.0005 ) ( 0.0475 0.0495 0.0005 ) ( 0.0485 0.0495 0.0005 ) ( 0.0495 0.0495 0.0005 ) ( 0.0505 0.0495 0.0005 ) ( 0.0515 0.0495 0.0005 ) ( 0.0525 0.0495 0.0005 ) ( 0.0535 0.0495 0.0005 ) ( 0.0545 0.0495 0.0005 ) );
+    }
+}
+
+
+// ************************************************************************* //

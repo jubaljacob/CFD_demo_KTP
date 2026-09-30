@@ -1,0 +1,106 @@
+{
+  "status": "pilot numerical screens passed; mesh sensitivity and physical validation outstanding",
+  "iteration": 600,
+  "cells": 1743506,
+  "screens": {
+    "source_mesh_unchanged": true,
+    "all_fields_finite": true,
+    "global_flow_balance": true,
+    "no_significant_outlet_reversal": true,
+    "low_Mach": true,
+    "small_pressure_variation": true,
+    "last_two_saved_intervals_settled": true
+  },
+  "patch_volume_flows_m3_per_s": {
+    "inlet1": -1.3323135910907299e-05,
+    "inlet2": -1.33231359109025e-05,
+    "inlet3": -1.3323135910900099e-05,
+    "inlet4": -1.33231359109048e-05,
+    "outlet1": 2.664626279264895e-05,
+    "outlet2": 2.664628089487238e-05,
+    "support": 0.0,
+    "wafer": 0.0,
+    "walls": 0.0
+  },
+  "inlet_total_m3_per_s": 5.3292543643614694e-05,
+  "outlet_total_m3_per_s": 5.329254368752133e-05,
+  "net_flow_relative_error": 8.238794929556148e-10,
+  "inlet_target_relative_error": 3.2917002457111266e-12,
+  "mass_flow_kg_per_s": 6.247552039945942e-06,
+  "outlet_reverse_flow_m3_per_s": {
+    "outlet1": -0.0,
+    "outlet2": -0.0
+  },
+  "sum_absolute_cell_flux_imbalance_over_total_inlet_flow": 9.880863934780996e-08,
+  "max_cell_flux_imbalance_m3_per_s": 1.5001999978610212e-15,
+  "velocity_cell_centre_range_m_per_s": [
+    1.7663729430980844e-07,
+    1.4491300558958453
+  ],
+  "maximum_speed_including_inlet_m_per_s": 1.4491300558958453,
+  "maximum_Mach": 0.003634404260854589,
+  "kinematic_gauge_pressure_range_m2_per_s2": [
+    -0.0858165503211,
+    4.21550869337
+  ],
+  "gauge_pressure_range_Pa": [
+    -0.010060382322995958,
+    0.4941893956647188
+  ],
+  "max_pressure_deviation_over_absolute_operating_pressure": 3.706791146600051e-05,
+  "late_field_changes": [
+    {
+      "from_iteration": 400,
+      "to_iteration": 500,
+      "max_velocity_change_m_per_s": 0.00038466160612197635,
+      "max_velocity_change_over_nominal_inlet_speed": 0.0005224500060475227,
+      "unweighted_relative_L2_velocity_change": 0.0016297087737407235,
+      "max_pressure_change_Pa": 2.3652280077890996e-06
+    },
+    {
+      "from_iteration": 500,
+      "to_iteration": 600,
+      "max_velocity_change_m_per_s": 0.00027623083494131707,
+      "max_velocity_change_over_nominal_inlet_speed": 0.0003751785961706831,
+      "unweighted_relative_L2_velocity_change": 0.0011099537555968083,
+      "max_pressure_change_Pa": 1.6165838356844505e-06
+    }
+  ],
+  "last_iteration_residuals": {
+    "Ux": [
+      {
+        "initial": 3.55647888693e-05,
+        "final": 1.4865587374e-06
+      }
+    ],
+    "Uy": [
+      {
+        "initial": 3.31796842414e-05,
+        "final": 1.39599120621e-06
+      }
+    ],
+    "Uz": [
+      {
+        "initial": 2.58681179666e-06,
+        "final": 1.09954288834e-07
+      }
+    ],
+    "p": [
+      {
+        "initial": 5.9256382029e-06,
+        "final": 2.42119475092e-07
+      },
+      {
+        "initial": 5.14439460635e-07,
+        "final": 1.75465501352e-08
+      }
+    ]
+  },
+  "limitations": [
+    "Prescribed mesh-quality limits pass unchanged. Strict diagnostic flags 285 concave cells; all inspected volumes positive and centres inside their face planes. Retain warnings; this is a sensitivity pilot.",
+    "This carrier screen alone does not establish mesh independence.",
+    "Steady numerical convergence is not experimental validation or proof that every physical flow is steady.",
+    "Isothermal nitrogen carrier only: no tracer, chemistry, plasma, adsorption, or deposition.",
+    "Pressure field is kinematic gauge pressure, not absolute pressure. Steady iteration labels are not physical seconds."
+  ]
+}

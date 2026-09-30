@@ -1,0 +1,103 @@
+FoamFile
+{ version 2.0; format ascii; class dictionary; object snappyHexMeshDict; }
+
+castellatedMesh true;
+snap true;
+addLayers false;
+geometry
+{
+ reactor.stl
+ {
+  type triSurfaceMesh;
+  name reactor;
+  regions
+  {
+   inlet1 { name inlet1; }
+   inlet2 { name inlet2; }
+   inlet3 { name inlet3; }
+   inlet4 { name inlet4; }
+   outlet1 { name outlet1; }
+   outlet2 { name outlet2; }
+   wafer { name wafer; }
+   support { name support; }
+   walls { name walls; }
+  }
+ }
+ inletRefinement
+ {
+  type searchableBox;
+  min (-0.022 -0.022 -0.004);
+  max (0.022 0.022 0.014);
+ }
+ waferRefinement
+ {
+  type searchableCylinder;
+  point1 (0 0 -0.163);
+  point2 (0 0 -0.145);
+  radius 0.029;
+ }
+ exhaustRefinement
+ {
+  type searchableBox;
+  min (-0.047 -0.012 -0.544);
+  max (0.047 0.012 -0.518);
+ }
+}
+castellatedMeshControls
+{
+ maxLocalCells 1500000;
+ maxGlobalCells 1500000;
+ minRefinementCells 0;
+ maxLoadUnbalance 0.1;
+ nCellsBetweenLevels 3;
+ features ( { file "reactor.eMesh"; level 2; } );
+ refinementSurfaces
+ {
+  reactor
+  {
+   level (1 1);
+   regions
+   {
+   inlet1 { level (3 3); patchInfo { type patch; } }
+   inlet2 { level (3 3); patchInfo { type patch; } }
+   inlet3 { level (3 3); patchInfo { type patch; } }
+   inlet4 { level (3 3); patchInfo { type patch; } }
+   outlet1 { level (2 2); patchInfo { type patch; } }
+   outlet2 { level (2 2); patchInfo { type patch; } }
+   wafer { level (3 3); patchInfo { type wall; } }
+   support { level (2 2); patchInfo { type wall; } }
+   walls { level (1 1); patchInfo { type wall; } }
+   }
+  }
+ }
+ resolveFeatureAngle 30;
+ refinementRegions
+ {
+  inletRefinement { mode inside; levels ((1e15 3)); }
+  waferRefinement { mode inside; levels ((1e15 3)); }
+  exhaustRefinement { mode inside; levels ((1e15 2)); }
+ }
+ locationInMesh (0.0031 0.0017 -0.0833);
+ allowFreeStandingZoneFaces false;
+}
+snapControls
+{
+ nSmoothPatch 5;
+ nSmoothInternal 5;
+ tolerance 1.0;
+ nSolveIter 100;
+ nRelaxIter 5;
+ nFeatureSnapIter 10;
+ implicitFeatureSnap false;
+ explicitFeatureSnap true;
+ multiRegionFeatureSnap true;
+}
+addLayersControls {}
+meshQualityControls
+{
+ #include "meshQualityDict"
+ nSmoothScale 4;
+ errorReduction 0.75;
+}
+writeFlags (scalarLevels);
+mergeTolerance 1e-6;

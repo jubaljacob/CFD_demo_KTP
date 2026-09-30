@@ -1,0 +1,23 @@
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class volScalarField;
+    object T;
+}
+
+// Dimensionless label fraction, not temperature. Gas is initially unlabelled.
+dimensions [0 0 0 0 0 0 0];
+internalField uniform 0;
+boundaryField
+{
+    inlet1 { type fixedValue; value uniform 1; }
+    inlet2 { type fixedValue; value uniform 1; }
+    inlet3 { type fixedValue; value uniform 1; }
+    inlet4 { type fixedValue; value uniform 1; }
+    outlet1 { type zeroGradient; }
+    outlet2 { type zeroGradient; }
+    wafer { type zeroGradient; }
+    support { type zeroGradient; }
+    walls { type zeroGradient; }
+}

@@ -1,0 +1,37 @@
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class dictionary;
+    object fvSchemes;
+}
+
+// Transient passive tracer, using the saved conservative phi.
+ddtSchemes
+{
+    default Euler;
+}
+gradSchemes
+{
+    default Gauss linear;
+}
+divSchemes
+{
+    default none;
+    // First-order upwind for a robust initial bounded transport calculation.
+    // It adds numerical spreading: quantify mesh sensitivity before claims.
+    div(phi,T) Gauss upwind;
+}
+laplacianSchemes
+{
+    default none;
+    laplacian(DT,T) Gauss linear orthogonal;
+}
+interpolationSchemes
+{
+    default linear;
+}
+snGradSchemes
+{
+    default orthogonal;
+}

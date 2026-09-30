@@ -1,0 +1,94 @@
+{
+  "checks": {
+    "inlet1_type": true,
+    "inlet1_area": true,
+    "inlet2_type": true,
+    "inlet2_area": true,
+    "inlet3_type": true,
+    "inlet3_area": true,
+    "inlet4_type": true,
+    "inlet4_area": true,
+    "inlet5_type": true,
+    "inlet5_area": true,
+    "outlet1_type": true,
+    "outlet1_area": true,
+    "outlet2_type": true,
+    "outlet2_area": true,
+    "support_type": true,
+    "wafer_type": true,
+    "wafer_area": true,
+    "walls_type": true,
+    "gas_volume": true
+  },
+  "patches": {
+    "inlet1": {
+      "start": 2480254,
+      "n": 76,
+      "type": "patch",
+      "area_m2": 1.782997460958337e-05
+    },
+    "inlet2": {
+      "start": 2480330,
+      "n": 76,
+      "type": "patch",
+      "area_m2": 1.78299795347739e-05
+    },
+    "inlet3": {
+      "start": 2480406,
+      "n": 76,
+      "type": "patch",
+      "area_m2": 1.782997979984643e-05
+    },
+    "inlet4": {
+      "start": 2480482,
+      "n": 76,
+      "type": "patch",
+      "area_m2": 1.7829984725036957e-05
+    },
+    "inlet5": {
+      "start": 2480558,
+      "n": 76,
+      "type": "patch",
+      "area_m2": 1.7832330772236788e-05
+    },
+    "outlet1": {
+      "start": 2480634,
+      "n": 208,
+      "type": "patch",
+      "area_m2": 0.00020003670773499697
+    },
+    "outlet2": {
+      "start": 2480842,
+      "n": 208,
+      "type": "patch",
+      "area_m2": 0.00020003670773499697
+    },
+    "support": {
+      "start": 2481050,
+      "n": 61988,
+      "type": "wall",
+      "area_m2": 0.06394320495589179
+    },
+    "wafer": {
+      "start": 2543038,
+      "n": 7860,
+      "type": "wall",
+      "area_m2": 0.0019630534290859336
+    },
+    "walls": {
+      "start": 2550898,
+      "n": 53684,
+      "type": "wall",
+      "area_m2": 0.17203006603572749
+    }
+  },
+  "volume_m3": 0.0031323085014656527,
+  "expected_volume_m3": 0.003134105191098738,
+  "mesh_sha256": {
+    "points": "557114a3aeaa675d612ef07dd27b17313202acfc09bd6c4ed35d7052096460b7",
+    "faces": "6550467e6b69bd2bdafd7528a042e8ca99197ac69fe5496ddf3cf0096df43227",
+    "owner": "5f8a0f954c331fa065964c503dce3cfe9a20244a6c74cf6c9c9fd75d88e097d1",
+    "neighbour": "c38c2c10da26bb5d083da91e391ace7f5eb155768b416f6151baaa01b5fe1750",
+    "boundary": "09495592abca6e5d9b2905fb8a386d13e8f5d59230a85181d2d4451d256d179f"
+  }
+}

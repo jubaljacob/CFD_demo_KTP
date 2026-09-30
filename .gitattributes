@@ -1,2 +1,8 @@
 # Preserve original OpenFOAM evidence bytes, including solver formatting.
 public/evidence/** -text -whitespace
+# Keep the archived scientific inputs and their fingerprints unchanged.
+openfoam/** -text -whitespace
+geometry/** -text -whitespace
+physics/** -text -whitespace
+references/** -text -whitespace
+simulation/review/** -text -whitespace

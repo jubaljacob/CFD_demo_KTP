@@ -1,0 +1,20 @@
+{
+  "carrier_case": "openfoam/nist3d/flow-pilot",
+  "carrier_iteration": 600,
+  "mesh_sha256": {
+    "points": "3019060eeed5abdf0e67bca1ca4ad800ff3403f69026aeeaeea04ed72b7ba6bc",
+    "faces": "67bbb4864767110d8a913d20131e204be92d9789aa6908ad763eea46b611d6ed",
+    "owner": "33199f48a208a5d34402b11a221704cd10765297a2f863b6074fc14b7434a215",
+    "neighbour": "0004d841c48c40fbe87116e3a6e2f0b47206d8f1ac3dce5f801e71d63cb760b7",
+    "boundary": "01a93c0070ebb1b7cca2da2f267bf910959a1a33f117711601fedce553d9a0c0"
+  },
+  "source_fields_sha256": {
+    "U": "59a6f6b653615d6ae523593ea1031fc7fa68a04b6effb4a75af111f8133f6b67",
+    "phi": "7fd56a3dfcef0fd1446d3763ce60172aeb1488e330a23661e3db26ffc132fd2d"
+  },
+  "dt_s": 0.05,
+  "end_s": 40,
+  "correction_passes": 4,
+  "inlet_count": 4,
+  "meaning": "Passive nitrogen label, not precursor, temperature or film growth"
+}

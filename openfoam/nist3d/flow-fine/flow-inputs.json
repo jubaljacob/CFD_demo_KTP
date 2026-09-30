@@ -1,0 +1,37 @@
+{
+  "status": "configured, not yet solved",
+  "source_mesh": "openfoam/nist3d/mesh-fine",
+  "source_mesh_sha256": {
+    "points": "2cfed61cfd732a93cd67c7ad8d749e55a41fbc1fd4aea4bbe6986e784e981a4e",
+    "faces": "0cc6b27289a80119d190c2874ddeb93ae5a980bb20f1948f7aab1c2df14aaaf7",
+    "boundary": "a76fbd2a83254bab8ff5e515602a92c5539f061b567b7ce99d1f63b477a1a9ca",
+    "owner": "0139ef7cc7073502ca1bc2394d9b904a240cade90b1e4adc6123a708aa79488f",
+    "neighbour": "2acb70e0b368898a8bab824df3908c3ad5b7341bc47644b710c524a0bb58890d"
+  },
+  "mesh_disposition": "Prescribed mesh-quality limits pass unchanged. Strict diagnostic flags 285 concave cells; all inspected volumes positive and centres inside their face planes. Retain warnings; this is a sensitivity pilot.",
+  "concavity_evidence": "openfoam/nist3d/mesh-fine/concavity-review/measurements.json",
+  "solver": "simpleFoam",
+  "processes": 8,
+  "initial_iteration_budget": 600,
+  "nu_m2_per_s": 0.00018347793071574938,
+  "Q_each_inlet_m3_per_s": 1.332313591094753e-05,
+  "rho_kg_per_m3": 0.11723126,
+  "temperature_K": 383.15,
+  "operating_absolute_pressure_Pa": 13332,
+  "assumptions": [
+    "uniform temperature",
+    "constant density",
+    "laminar Newtonian",
+    "no gravity/buoyancy",
+    "stationary no-slip solids",
+    "steady carrier pilot; no tracer yet"
+  ],
+  "screening_before_quantitative_use": {
+    "net_flux_relative_error_max": 1e-05,
+    "outlet_reverse_flux_fraction_max": 1e-06,
+    "maximum_Mach_max": 0.1,
+    "max_absolute_pressure_deviation_over_operating_max": 0.01,
+    "late_max_velocity_change_over_inlet_mean_max": 0.001,
+    "note": "Project pilot criteria only. Field settling and residual history are both reviewed. Mesh sensitivity and physical validation remain outstanding."
+  }
+}

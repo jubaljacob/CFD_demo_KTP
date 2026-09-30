@@ -1,0 +1,195 @@
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class dictionary;
+    object controlDict;
+}
+
+application simpleFoam;
+startFrom startTime;
+startTime 0;
+stopAt endTime;
+// Steady solver labels below count iterations, not physical seconds.
+endTime 600;
+deltaT 1;
+writeControl timeStep;
+writeInterval 100;
+purgeWrite 0;
+writeFormat ascii;
+writePrecision 12;
+writeCompression off;
+timeFormat general;
+timePrecision 8;
+runTimeModifiable false;
+functions
+{
+    inlet1_sum
+    {
+        type surfaceFieldValue;
+        libs (fieldFunctionObjects);
+        regionType patch;
+        name inlet1;
+        operation sum;
+        fields (phi);
+        writeFields false;
+        log true;
+        writePrecision 14;
+        writeControl timeStep;
+        writeInterval 20;
+    }
+    inlet2_sum
+    {
+        type surfaceFieldValue;
+        libs (fieldFunctionObjects);
+        regionType patch;
+        name inlet2;
+        operation sum;
+        fields (phi);
+        writeFields false;
+        log true;
+        writePrecision 14;
+        writeControl timeStep;
+        writeInterval 20;
+    }
+    inlet3_sum
+    {
+        type surfaceFieldValue;
+        libs (fieldFunctionObjects);
+        regionType patch;
+        name inlet3;
+        operation sum;
+        fields (phi);
+        writeFields false;
+        log true;
+        writePrecision 14;
+        writeControl timeStep;
+        writeInterval 20;
+    }
+    inlet4_sum
+    {
+        type surfaceFieldValue;
+        libs (fieldFunctionObjects);
+        regionType patch;
+        name inlet4;
+        operation sum;
+        fields (phi);
+        writeFields false;
+        log true;
+        writePrecision 14;
+        writeControl timeStep;
+        writeInterval 20;
+    }
+inlet5_sum
+    {
+        type surfaceFieldValue;
+        libs (fieldFunctionObjects);
+        regionType patch;
+        name inlet5;
+        operation sum;
+        fields (phi);
+        writeFields false;
+        log true;
+        writePrecision 14;
+        writeControl timeStep;
+        writeInterval 20;
+    }
+    outlet1_sum
+    {
+        type surfaceFieldValue;
+        libs (fieldFunctionObjects);
+        regionType patch;
+        name outlet1;
+        operation sum;
+        fields (phi);
+        writeFields false;
+        log true;
+        writePrecision 14;
+        writeControl timeStep;
+        writeInterval 20;
+    }
+    outlet1_sumMag
+    {
+        type surfaceFieldValue;
+        libs (fieldFunctionObjects);
+        regionType patch;
+        name outlet1;
+        operation sumMag;
+        fields (phi);
+        writeFields false;
+        log true;
+        writePrecision 14;
+        writeControl timeStep;
+        writeInterval 20;
+    }
+    outlet2_sum
+    {
+        type surfaceFieldValue;
+        libs (fieldFunctionObjects);
+        regionType patch;
+        name outlet2;
+        operation sum;
+        fields (phi);
+        writeFields false;
+        log true;
+        writePrecision 14;
+        writeControl timeStep;
+        writeInterval 20;
+    }
+    outlet2_sumMag
+    {
+        type surfaceFieldValue;
+        libs (fieldFunctionObjects);
+        regionType patch;
+        name outlet2;
+        operation sumMag;
+        fields (phi);
+        writeFields false;
+        log true;
+        writePrecision 14;
+        writeControl timeStep;
+        writeInterval 20;
+    }
+    wafer_sum
+    {
+        type surfaceFieldValue;
+        libs (fieldFunctionObjects);
+        regionType patch;
+        name wafer;
+        operation sum;
+        fields (phi);
+        writeFields false;
+        log true;
+        writePrecision 14;
+        writeControl timeStep;
+        writeInterval 20;
+    }
+    support_sum
+    {
+        type surfaceFieldValue;
+        libs (fieldFunctionObjects);
+        regionType patch;
+        name support;
+        operation sum;
+        fields (phi);
+        writeFields false;
+        log true;
+        writePrecision 14;
+        writeControl timeStep;
+        writeInterval 20;
+    }
+    walls_sum
+    {
+        type surfaceFieldValue;
+        libs (fieldFunctionObjects);
+        regionType patch;
+        name walls;
+        operation sum;
+        fields (phi);
+        writeFields false;
+        log true;
+        writePrecision 14;
+        writeControl timeStep;
+        writeInterval 20;
+    }
+}

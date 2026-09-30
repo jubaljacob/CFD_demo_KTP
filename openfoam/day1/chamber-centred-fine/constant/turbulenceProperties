@@ -1,0 +1,17 @@
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class dictionary;
+    object turbulenceProperties;
+}
+
+// Laminar Newtonian flow: no turbulence model or turbulent viscosity.
+simulationType laminar;
+laminar
+{
+    // OpenCFD's Newtonian laminar stress model, as in our reference case.
+    // This name does not remove convection from simpleFoam's equations.
+    model Stokes;
+    printCoeffs on;
+}

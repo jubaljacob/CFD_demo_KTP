@@ -1,0 +1,8 @@
+openfoam/
+geometry/
+physics/
+references/
+simulation/
+simulation-runs/
+scripts/
+.venv-simulation/

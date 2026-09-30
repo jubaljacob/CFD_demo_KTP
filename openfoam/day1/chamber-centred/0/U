@@ -1,0 +1,47 @@
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class volVectorField;
+    object U;
+}
+
+// Velocity in metres per second: components are (X Y Z).
+dimensions [0 1 -1 0 0 0 0];
+
+// Initial guess for the steady flow calculation, not a startup experiment.
+internalField uniform (0 0 0);
+
+boundaryField
+{
+    inlet
+    {
+        type fixedValue;
+        // Downwards at 0.01 m/s = 1 cm/s.
+        value uniform (0 -0.01 0);
+    }
+    outletLeft
+    {
+        // Velocity is calculated at this pressure-specified opening.
+        // This condition permits reversal; backflow must be checked later.
+        type pressureInletOutletVelocity;
+        value uniform (0 0 0);
+    }
+    outletRight
+    {
+        type pressureInletOutletVelocity;
+        value uniform (0 0 0);
+    }
+    wafer
+    {
+        type noSlip;
+    }
+    walls
+    {
+        type noSlip;
+    }
+    frontAndBack
+    {
+        type empty;
+    }
+}

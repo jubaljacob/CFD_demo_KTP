@@ -1,0 +1,42 @@
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class volScalarField;
+    object p;
+}
+
+// Incompressible solver pressure divided by constant density: m^2/s^2.
+// Zero at the outlets is a relative reference, NOT absolute vacuum.
+dimensions [0 2 -2 0 0 0 0];
+internalField uniform 0;
+
+boundaryField
+{
+    inlet
+    {
+        type zeroGradient;
+    }
+    outletLeft
+    {
+        type fixedValue;
+        value uniform 0;
+    }
+    outletRight
+    {
+        type fixedValue;
+        value uniform 0;
+    }
+    wafer
+    {
+        type zeroGradient;
+    }
+    walls
+    {
+        type zeroGradient;
+    }
+    frontAndBack
+    {
+        type empty;
+    }
+}

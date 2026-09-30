@@ -1,0 +1,44 @@
+{
+  "purpose": "Two-mesh sensitivity of nitrogen replacement at nine wafer-adjacent positions.",
+  "baseline_mesh": "openfoam/nist3d/pilot-smooth",
+  "comparison_mesh": "openfoam/nist3d/mesh-fine",
+  "baseline_tracer": "openfoam/nist3d/tracer-pilot",
+  "background_cell_sizes_m": [
+    0.004,
+    0.003
+  ],
+  "nominal_wafer_cell_sizes_m": [
+    0.0005,
+    0.000375
+  ],
+  "linear_refinement_ratio": 1.3333333333333333,
+  "geometry_surface_sha256": "19186a9b88c55dab9d1860195a73d9cdc3f7574fd67b4800e4b92806c70e8adb",
+  "unchanged": [
+    "STL geometry",
+    "refinement levels and regions",
+    "snapping settings",
+    "mesh quality limits",
+    "physical properties and total inlet flow",
+    "flow and tracer discretisation",
+    "nine physical probe positions",
+    "tracer time step 0.05 s"
+  ],
+  "primary_metric": "First time all nine cell-sampled label fractions reach 0.90, linearly interpolated between the two bracketing diagnostic times; verify they remain above threshold thereafter.",
+  "secondary_metric": "Maximum absolute difference between paired probe histories over their common simulated interval.",
+  "predeclared_project_screens": {
+    "relative_t90_difference_max": 0.02,
+    "absolute_probe_fraction_difference_max": 0.01
+  },
+  "required_checks": [
+    "unchanged prescribed mesh-quality criteria pass",
+    "inspect all strict geometry warnings",
+    "flow settling, balance, outward-only outlets, low Mach",
+    "tracer bounds and conservative label budget"
+  ],
+  "limits": [
+    "Two meshes cannot establish asymptotic convergence or a formal grid convergence index.",
+    "Cell sampling can shift to different cell centres even at fixed physical probe positions.",
+    "Nine samples do not establish full-wafer uniformity or deposition.",
+    "Early half-time-step result covers 20 s only; t90 temporal sensitivity must be checked separately."
+  ]
+}

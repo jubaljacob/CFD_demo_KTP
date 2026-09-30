@@ -1,0 +1,14 @@
+The cavity and planar-Poiseuille exercises derive from OpenCFD OpenFOAM v2512
+tutorials. Retained headers identify their origin. OpenFOAM is distributed under
+the GNU General Public License; see https://www.openfoam.com/legal/licensing
+and the corresponding OpenCFD source distribution for license terms and notices.
+The GPL v3 text is included in simulation/OPENFOAM_COPYING.txt.
+
+The repository does not redistribute the OpenFOAM or ParaView executables or
+downloaded research papers. The Docker helper references the original OpenCFD
+image by immutable digest.
+
+Reactor dimensions and gas-property assumptions are attributed in the included
+geometry and physics JSON files. NIST-derived property data are attributed in
+physics/nist-3d/operating-point.json. The scientific model is an independent,
+simplified project implementation, not vendor equipment CAD.

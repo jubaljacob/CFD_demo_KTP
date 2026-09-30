@@ -1,0 +1,45 @@
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class volScalarField;
+    object T;
+}
+
+// scalarTransportFoam calls its transported field T.
+// Here T is a dimensionless tracer label, NOT temperature.
+// Zero: no tracer. One: the concentration supplied at the inlet.
+dimensions [0 0 0 0 0 0 0];
+internalField uniform 0;
+
+boundaryField
+{
+    inlet
+    {
+        type fixedValue;
+        value uniform 1;
+    }
+    outletLeft
+    {
+        // Advective tracer outflow is allowed; normal diffusive flux is zero.
+        // Use only with the checked outward carrier flow.
+        type zeroGradient;
+    }
+    outletRight
+    {
+        type zeroGradient;
+    }
+    wafer
+    {
+        // Impermeable, non-reacting wall: no normal diffusive tracer flux.
+        type zeroGradient;
+    }
+    walls
+    {
+        type zeroGradient;
+    }
+    frontAndBack
+    {
+        type empty;
+    }
+}

@@ -1,0 +1,42 @@
+{
+  "setup_status": "Completed 40 s; full numerical screens and resolution comparison passed.",
+  "carrier_case": "openfoam/nist3d/flow-fine",
+  "carrier_iteration": 600,
+  "source_fields_sha256": {
+    "openfoam/nist3d/flow-fine/600/U": "8859db2affcc5d914ca99f1084bce650eee7f8f716ec52296ac2f3980a5dd436",
+    "openfoam/nist3d/flow-fine/600/phi": "a3f24d4ea9d84a44496e975262d01b80f13c085d49d93fe6e04b9b498a6fa9b5"
+  },
+  "mesh_sha256": {
+    "points": "2cfed61cfd732a93cd67c7ad8d749e55a41fbc1fd4aea4bbe6986e784e981a4e",
+    "faces": "0cc6b27289a80119d190c2874ddeb93ae5a980bb20f1948f7aab1c2df14aaaf7",
+    "boundary": "a76fbd2a83254bab8ff5e515602a92c5539f061b567b7ce99d1f63b477a1a9ca",
+    "owner": "0139ef7cc7073502ca1bc2394d9b904a240cade90b1e4adc6123a708aa79488f",
+    "neighbour": "2acb70e0b368898a8bab824df3908c3ad5b7341bc47644b710c524a0bb58890d"
+  },
+  "field": "T",
+  "meaning": "dimensionless imaginary nitrogen label fraction; not temperature or precursor",
+  "diffusivity_m2_s": 0.0002455754605638339,
+  "time_step_s": 0.05,
+  "trial_end_s": 0.2,
+  "proposed_animation_end_s": 40,
+  "saved_frame_interval_s": 10,
+  "equation": "dT/dt + div(U T) = div(D grad(T)), fixed U and conservative phi",
+  "boundaries": "inlets T=1 from t=0; outward-flow outlets zeroGradient; nonreacting impermeable walls/wafer/support zeroGradient",
+  "diagnostic": "Every time step: label inventory, internal bounds, advective and corrected diffusive outward boundary fluxes. Euler balance compares inventory change with end-of-step flux, not trapezoidal integration.",
+  "probes": "Nine fixed cell-sampled positions 2 mm above wafer, centre plus eight points at radius 20 mm. These do not establish full-disk uniformity.",
+  "predeclared_screening": {
+    "T_lower": -1e-06,
+    "T_upper": 1.000001,
+    "max_cumulative_balance_error_over_chamber_volume": 0.0001,
+    "temporal_pilot_max_probe_difference": 0.01
+  },
+  "limitations": [
+    "Prescribed mesh-quality limits pass unchanged. Strict diagnostic flags 285 concave cells; all inspected volumes positive and centres inside their face planes. Retain warnings; this is a sensitivity pilot.",
+    "First-order Euler and upwind introduce numerical spreading; assess a half-step comparison.",
+    "Large local advective Courant numbers are possible in the small inlet tubes; implicit stability is not temporal accuracy.",
+    "Diffusive inlet label flux is included, so label input need not equal convective carrier supply.",
+    "Fixed isothermal carrier; no adsorption, surface consumption, plasma, chemistry or film growth."
+  ],
+  "nNonOrthogonalCorrectors": 4,
+  "correction_rationale": "One correction caused a 1.0006809 startup overshoot on the finer mesh. Four correction passes removed it in a separate four-step test; discretisation, tolerances, properties and dt unchanged. Full-history checks remain required."
+}

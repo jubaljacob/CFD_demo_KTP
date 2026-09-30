@@ -1,0 +1,141 @@
+{
+  "status": "Python topology checks only; consult OpenFOAM surfaceCheck for self-intersection check",
+  "units": "metres",
+  "vertices": 2824,
+  "triangles": 5644,
+  "boundary_connected_components": 1,
+  "edges_without_exactly_two_faces": 0,
+  "inconsistently_oriented_edges": 0,
+  "duplicate_triangles": 0,
+  "zero_area_triangles": 0,
+  "signed_gas_volume_m3": 0.003133538794675962,
+  "analytic_gas_volume_m3": 0.003134105191098738,
+  "volume_error_percent": -0.018072029757787433,
+  "bounding_box_m": [
+    [
+      -0.051000000000000004,
+      -0.051000000000000004,
+      -0.54
+    ],
+    [
+      0.051000000000000004,
+      0.051000000000000004,
+      0.01
+    ]
+  ],
+  "patches": {
+    "inlet1": {
+      "triangles": 64,
+      "area_m2": 1.8066519305461527e-05,
+      "oriented_area_vector_m2": [
+        0.0,
+        0.0,
+        1.8066519305461523e-05
+      ],
+      "analytic_area_m2": 1.8095573684677205e-05,
+      "area_error_percent": -0.1605606968972828
+    },
+    "inlet2": {
+      "triangles": 64,
+      "area_m2": 1.8066519305461527e-05,
+      "oriented_area_vector_m2": [
+        0.0,
+        0.0,
+        1.8066519305461534e-05
+      ],
+      "analytic_area_m2": 1.8095573684677205e-05,
+      "area_error_percent": -0.1605606968972828
+    },
+    "inlet3": {
+      "triangles": 64,
+      "area_m2": 1.8066519305461527e-05,
+      "oriented_area_vector_m2": [
+        0.0,
+        0.0,
+        1.806651930546153e-05
+      ],
+      "analytic_area_m2": 1.8095573684677205e-05,
+      "area_error_percent": -0.1605606968972828
+    },
+    "inlet4": {
+      "triangles": 64,
+      "area_m2": 1.8066519305461527e-05,
+      "oriented_area_vector_m2": [
+        0.0,
+        0.0,
+        1.8066519305461523e-05
+      ],
+      "analytic_area_m2": 1.8095573684677205e-05,
+      "area_error_percent": -0.1605606968972828
+    },
+    "inlet5": {
+      "triangles": 64,
+      "area_m2": 1.806651930546153e-05,
+      "oriented_area_vector_m2": [
+        0.0,
+        0.0,
+        1.8066519305461523e-05
+      ],
+      "analytic_area_m2": 1.8095573684677205e-05,
+      "area_error_percent": -0.1605606968972606
+    },
+    "outlet1": {
+      "triangles": 64,
+      "area_m2": 0.0002007391033951404,
+      "oriented_area_vector_m2": [
+        0.0,
+        0.0,
+        -0.0002007391033951404
+      ],
+      "analytic_area_m2": 0.00020106192982974675,
+      "area_error_percent": -0.16056069633854086
+    },
+    "outlet2": {
+      "triangles": 64,
+      "area_m2": 0.00020073910339514042,
+      "oriented_area_vector_m2": [
+        0.0,
+        0.0,
+        -0.0002007391033951404
+      ],
+      "analytic_area_m2": 0.00020106192982974675,
+      "area_error_percent": -0.16056069633852976
+    },
+    "support": {
+      "triangles": 2304,
+      "area_m2": 0.06395285932155485,
+      "oriented_area_vector_m2": [
+        -2.168404344971009e-19,
+        -1.6135977645194421e-19,
+        0.0010553867354986192
+      ]
+    },
+    "wafer": {
+      "triangles": 192,
+      "area_m2": 0.0019631449693067026,
+      "oriented_area_vector_m2": [
+        0.0,
+        0.0,
+        -0.001963144969306703
+      ],
+      "analytic_area_m2": 0.001963495408493621,
+      "area_error_percent": -0.017847721232366887
+    },
+    "walls": {
+      "triangles": 2700,
+      "area_m2": 0.17205780601177695,
+      "oriented_area_vector_m2": [
+        -1.2027867851011065e-19,
+        2.3132999185106976e-18,
+        0.0012189038440710224
+      ]
+    }
+  },
+  "circle_segments": {
+    "main": 192,
+    "tubes": 64
+  },
+  "spec_sha256": "9dad1fd6c3ce4f2fb11c943be4860b659b096e4e9d6c9e6d8b1d8557c0ea6c54",
+  "assumptions": "Proposed central fifth inlet. Unchanged support and outlet assumptions; no flow result.",
+  "acceptance": "Closed oriented connected surface; positive volume; area and volume polygon errors below 0.2%. This is geometric consistency, not CFD validation."
+}

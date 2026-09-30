@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "status": "selected for first feasibility pilot; not a validated reactor operating point",
+  "gas": "nitrogen",
+  "temperature_K": 383.15,
+  "pressure_absolute_Pa": 13332.0,
+  "total_standard_flow_sccm": 300.0,
+  "standard_temperature_K": 273.15,
+  "standard_pressure_Pa": 101300.0,
+  "standard_conversion": "ideal-gas molar flow at the reactor paper's standard conditions",
+  "molar_mass_kg_per_mol": 0.0280134,
+  "gas_constant_J_per_mol_K": 8.31446261815324,
+  "carrier_property_file": "references/nist-reactor/nitrogen-383K-13332Pa.tsv",
+  "geometry_file": "geometry/nist-3d/geometry-spec.json",
+  "thermal_assumption": "Gas, inlet gas, wafer and walls all at 110 C; no energy equation or thermal buoyancy in this pilot.",
+  "flow_assumption": "Full 3D, laminar, constant density, no-slip solid walls; equal flow through four inlet tubes. Steadiness and density approximation require solution checks.",
+  "inlet_profile": "Uniform normal velocity at the upstream ends of four assumed 10 mm tubes; preserve prescribed integrated flow using actual meshed patch areas. Profile and tube-length sensitivity unresolved.",
+  "outlets": "Same reference pressure at both exhaust boundaries; outlet split is a result, not prescribed. Review reversed flow before tracer setup.",
+  "pressure_convention": "Operating absolute pressure selects properties. A future incompressible kinematic p uses zero outlet gauge reference, not 13332 as a direct field value. Absolute pressure deviations in Pa are rho times kinematic p, with any hydrostatic convention stated separately.",
+  "tracer": {
+    "meaning": "Fraction of nitrogen carrying an imaginary label introduced at the inlets after a step change; initially 0, inlet 1. Same physical gas on both sides of label front; not precursor concentration, temperature, or deposited film.",
+    "diffusion_kind": "nitrogen self-diffusion",
+    "A": -10.397,
+    "B_K": -52.566,
+    "C": 1.581,
+    "temperature_fit_range_K": [233, 422],
+    "reference_pressure_Pa": 101325.0,
+    "formula": "D(T,p) = exp(A+B/T+C*ln(T))*1e-4*(101325/p), m2/s, T in K. Inverse-pressure scaling uses the dilute-gas approximation.",
+    "source_location": "NIST TN 2279, printed pages 7-8 (PDF pages 12-13), Table 1a, N2/N2 row",
+    "uncertainty": "The nitrogen row does not assign an uncertainty; do not claim a precise percentage. Rounded published fit coefficients are used.",
+    "wall_condition": "Impermeable nonreacting wafer and walls: zero normal diffusive label flux. Wafer exposure sampled in gas above surface.",
+    "boundary_balance": "Include inlet diffusion in label balance if inlet value is prescribed; outlet treatment must match actual carrier direction."
+  },
+  "screening_limits": {
+    "inlet_Mach_below": 0.1,
+    "geometric_Knudsen_below": 0.001,
+    "post_run_max_pressure_deviation_fraction_below": 0.01,
+    "note": "Conservative project screening values, not an accuracy certificate or published acceptance criteria. No universal Reynolds threshold is imposed for this complex chamber."
+  },
+  "sources": {
+    "reactor": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=910496",
+    "N2_molar_mass": "https://webbook.nist.gov/cgi/cbook.cgi?Name=N2",
+    "carrier_properties_query": "https://webbook.nist.gov/cgi/fluid.cgi?Action=Data&Wide=on&ID=C7727379&Type=IsoTherm&Digits=8&T=383.15&PLow=0.13332&PHigh=0.13332&PInc=0.1&RefState=DEF&TUnit=K&PUnit=bar&DUnit=kg%2Fm3&HUnit=kJ%2Fkg&WUnit=m%2Fs&VisUnit=Pa%2As&STUnit=N%2Fm",
+    "self_diffusion": "https://nvlpubs.nist.gov/nistpubs/TechnicalNotes/NIST.TN.2279.pdf",
+    "diffusion_pressure_scaling": "https://handbook.ashrae.org/Handbooks/F25/IP/F25_Ch06/F25_Ch06_ip.aspx",
+    "mean_free_path_convention": "https://doc.comsol.com/6.3/doc/com.comsol.help.particle/particle_ug_fluid_flow.08.37.html"
+  },
+  "source_access_date": "2026-09-29",
+  "limitations": [
+    "This combination is selected from published ranges; not asserted to be an exact published CFD case.",
+    "Uniform 110 C differs from Figure 5's helium, 133 Pa, 500 C wafer and 110 C walls.",
+    "No reactions, adsorption, plasma, deposition, or thermal gradients.",
+    "Actual inlet area, pressure variation, local length scales and steady flow must be checked after meshing and solving."
+  ]
+}

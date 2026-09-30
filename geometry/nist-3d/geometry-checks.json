@@ -1,0 +1,13 @@
+{
+  "status": "dimensional checks passed; no mesh or simulation checked",
+  "total_inlet_area_m2": 7.238229473870882e-05,
+  "total_outlet_area_m2": 0.0004021238596594935,
+  "wafer_area_m2": 0.001963495408493621,
+  "wafer_boat_radial_clearance_mm": 18,
+  "minimum_support_radial_clearance_mm": 13,
+  "outlet_edge_to_stem_clearance_mm": 10,
+  "outlet_edge_to_outer_wall_clearance_mm": 8,
+  "inlet_extension_mm_assumed": 10,
+  "outlet_extension_mm_assumed": 10,
+  "lower_support_placement_assumed": true
+}

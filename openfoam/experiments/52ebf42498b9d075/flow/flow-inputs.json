@@ -1,0 +1,17 @@
+{
+  "mesh_sha256": {
+    "points": "557114a3aeaa675d612ef07dd27b17313202acfc09bd6c4ed35d7052096460b7",
+    "faces": "6550467e6b69bd2bdafd7528a042e8ca99197ac69fe5496ddf3cf0096df43227",
+    "owner": "5f8a0f954c331fa065964c503dce3cfe9a20244a6c74cf6c9c9fd75d88e097d1",
+    "neighbour": "c38c2c10da26bb5d083da91e391ace7f5eb155768b416f6151baaa01b5fe1750",
+    "boundary": "09495592abca6e5d9b2905fb8a386d13e8f5d59230a85181d2d4451d256d179f"
+  },
+  "total_sccm": 375,
+  "Q_each_inlet_m3_per_s": 1.332313591094753e-05,
+  "expected_total_m3_per_s": 6.661567955473765e-05,
+  "nu_m2_s": 0.00018347793071574938,
+  "rho_kg_m3": 0.11723126,
+  "parent_experiment_id": "6117e9b5ca3fd077",
+  "review": "3e8911535e47bad6f9d4df7d5ea68a885d7782dfe496c9fb4483b255ac4a27c3",
+  "iteration_budget": 600
+}

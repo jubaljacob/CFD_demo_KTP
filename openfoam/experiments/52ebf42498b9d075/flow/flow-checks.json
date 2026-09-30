@@ -1,0 +1,40 @@
+{
+  "valid": true,
+  "checks": {
+    "mesh_unchanged": true,
+    "fields_finite": true,
+    "inlet_supply": true,
+    "global_flow_balance": true,
+    "cell_flux_balance": true,
+    "outward_outlets": true,
+    "impermeable_solids": true,
+    "low_Mach": true,
+    "small_pressure_variation": true,
+    "late_velocity_settled": true
+  },
+  "iteration": 600,
+  "patch_volume_flows_m3_per_s": {
+    "inlet1": -1.33231359108997e-05,
+    "inlet2": -1.33231359108984e-05,
+    "inlet3": -1.3323135910902e-05,
+    "inlet4": -1.33231359108932e-05,
+    "inlet5": -1.33231359108929e-05,
+    "outlet1": 3.330783082028125e-05,
+    "outlet2": 3.330784876345399e-05,
+    "support": 0.0,
+    "wafer": 0.0,
+    "walls": 0.0
+  },
+  "net_flow_relative_error": 4.390714106186043e-10,
+  "cell_flux_relative_error": 4.5348843950817615e-08,
+  "maximum_speed_m_s": 1.422114812008228,
+  "late_velocity_changes_over_inlet_speed": [
+    0.0003780779784327115,
+    0.00021321033350521105
+  ],
+  "outlet_reverse_fraction": 0.0,
+  "limitations": [
+    "Conditional exploratory mesh approval; strict concavity findings remain.",
+    "No variant mesh/time sensitivity or experimental validation."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "date": "2026-09-30",
+  "scope": "Scientific source publication checks; not a fresh end-to-end CFD validation",
+  "archived_scientific_files": 282,
+  "openfoam_dictionary_files_parsed": 236,
+  "openfoam_version": "OpenCFD v2512",
+  "container_digest": "opencfd/openfoam-default@sha256:33fb575aa9980d2bc42fd58c75ae698c489293ba30c991380fe3f899c622f319",
+  "surface_regeneration": {
+    "numpy": "2.5.3",
+    "matplotlib": "3.10.8",
+    "four_inlet_stl_and_vtk_match_archived_bytes": true,
+    "five_inlet_stl_and_vtk_match_archived_bytes": true,
+    "four_inlet_open_or_inconsistently_oriented_edges": 0,
+    "five_inlet_open_or_inconsistently_oriented_edges": 0
+  },
+  "case_preparation_tests": "Passed for four, five and four-fine; missing dependencies and existing-directory overwrite are rejected",
+  "dictionary_validation_limit": "foamDictionary -disableFunctionEntries parses syntax without executing or expanding includes and coded function entries",
+  "full_fresh_clone_solver_rerun": false,
+  "remaining_limits": [
+    "Historical strict mesh concavity findings remain",
+    "Freshly generated meshes and solver outputs require new review",
+    "Five-inlet mesh/time sensitivity and experimental validation remain outstanding"
+  ]
+}

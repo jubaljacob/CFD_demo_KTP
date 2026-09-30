@@ -1,0 +1,100 @@
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class dictionary;
+    object controlDict;
+}
+
+application simpleFoam;
+startFrom startTime;
+startTime 0;
+stopAt endTime;
+// For this steady solver, these count iterations, NOT physical seconds.
+endTime 2000;
+deltaT 1;
+writeControl timeStep;
+writeInterval 200;
+purgeWrite 0;
+writeFormat ascii;
+writePrecision 12;
+writeCompression off;
+timeFormat general;
+timePrecision 8;
+runTimeModifiable true;
+
+// phi is the conservative volumetric flow through each mesh face (m^3/s).
+// Outward is positive; inward is negative. Sum phi, do not multiply by area.
+functions
+{
+    inletFlow
+    {
+        type surfaceFieldValue;
+        libs (fieldFunctionObjects);
+        regionType patch;
+        name inlet;
+        operation sum;
+        fields (phi);
+        writeFields false;
+        log true;
+        writePrecision 12;
+        writeControl timeStep;
+        writeInterval 10;
+    }
+    leftOutletFlow
+    {
+        type surfaceFieldValue;
+        libs (fieldFunctionObjects);
+        regionType patch;
+        name outletLeft;
+        operation sum;
+        fields (phi);
+        writeFields false;
+        log true;
+        writePrecision 12;
+        writeControl timeStep;
+        writeInterval 10;
+    }
+    rightOutletFlow
+    {
+        type surfaceFieldValue;
+        libs (fieldFunctionObjects);
+        regionType patch;
+        name outletRight;
+        operation sum;
+        fields (phi);
+        writeFields false;
+        log true;
+        writePrecision 12;
+        writeControl timeStep;
+        writeInterval 10;
+    }
+    leftOutletMagnitude
+    {
+        type surfaceFieldValue;
+        libs (fieldFunctionObjects);
+        regionType patch;
+        name outletLeft;
+        operation sumMag;
+        fields (phi);
+        writeFields false;
+        log true;
+        writePrecision 12;
+        writeControl timeStep;
+        writeInterval 10;
+    }
+    rightOutletMagnitude
+    {
+        type surfaceFieldValue;
+        libs (fieldFunctionObjects);
+        regionType patch;
+        name outletRight;
+        operation sumMag;
+        fields (phi);
+        writeFields false;
+        log true;
+        writePrecision 12;
+        writeControl timeStep;
+        writeInterval 10;
+    }
+}

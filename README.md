@@ -126,6 +126,22 @@ npm run build
 npm run preview
 ```
 
+## OpenFOAM experiments and reactor models
+
+The scientific source bundle includes the four- and five-inlet **STL and VTK reactor models**, meshing dictionaries, carrier-flow and tracer settings, gas-property inputs, and earlier cavity, channel-flow and 2D chamber exercises.
+
+See [simulation/README.txt](simulation/README.txt) for the case map, Docker commands and step-by-step reproduction instructions. The helpers create fresh cases under `simulation-runs/`; they do not overwrite the archived inputs. Regenerated meshes and results need their own numerical review.
+
+```bash
+# Check archived file integrity and case-preparation behaviour
+python3 simulation/test_sources.py
+
+# Prepare a fresh four-inlet mesh case (does not run a simulation)
+python3 simulation/prepare_case.py four mesh
+```
+
+The local OpenFOAM results occupy approximately 21 GB. The repository publishes compact source inputs and model surfaces; large meshes, processor folders and solution time directories can be regenerated using the documented workflow.
+
 ### Repository contents
 
 | Location | Contents |
@@ -134,11 +150,17 @@ npm run preview
 | `public/data/` | Compact study results, geometry, flow paths and fingerprints |
 | `public/evidence/` | Baseline and variant probe histories and tracer-balance records |
 | `public/media/` | Recorded tracer playback |
+| `openfoam/` | Experiment inputs and labelled four/five-inlet reactor surfaces |
+| `geometry/` | Geometry dimensions, assumptions and drawings |
+| `physics/` | Nitrogen operating point and property calculations |
+| `simulation/` | Reproduction helpers, source fingerprints and mesh-review evidence |
+| `scripts/` | Scientific geometry and operating-point calculations |
+| `references/` | Small attributed nitrogen property table |
 | `tests/` | Evidence-integrity and assessment checks |
 | `SOURCES.txt` | Research and software source notes |
 | `vercel.json` | Static deployment configuration |
 
-**Full OpenFOAM fields and the executable local agent are not included** in this public viewer repository.
+**Large generated volume meshes, full solution fields, private investigation history and the executable local agent are not included.** OpenFOAM case inputs and model surfaces are included; the reproduction guide explains how to generate new solution fields.
 
 ## References and acknowledgements
 
