@@ -6,7 +6,9 @@ This repository contains a static reviewer dashboard, compact measured evidence,
 reactor surfaces, calculated flow paths and recorded tracer playback. It does not
 include the executable local AI agent, full OpenFOAM fields, or a live solver.
 The assistant panel describes the demonstrated local workflow; it is not a live
-conversation. No API key, account connection or paid model is needed to view it.
+conversation. The original question composer and planning controls are visible,
+with live AI and execution actions explicitly disabled. Question drafts stay in
+the browser. No API key, account connection or paid model is needed to view it.
 
 LOCAL USE
 Node.js 22.12+ (or a supported newer Node.js release) and npm are required.
