@@ -1,0 +1,27 @@
+Research and software sources
+
+Kimes, Moore and Maslar (2012): https://doi.org/10.1063/1.4742991
+Reactor geometry inspiration. This demonstration uses a simplified isothermal
+nitrogen operating point, not a reproduction of the paper's complete physics.
+
+Burgess (2024), NIST Technical Note 2279:
+https://doi.org/10.6028/NIST.TN.2279
+Gas diffusion reference.
+
+OpenCFD OpenFOAM v2512: https://www.openfoam.com/documentation/tutorial-guide
+Local CFD solver and finite-volume tutorials. OpenFOAM is third-party GPL
+software; its executable/source distribution is not bundled in this static site.
+
+ParaView: https://docs.paraview.org/en/latest/
+Local post-processing and exported flow paths/tracer video. No ParaView
+executable is bundled.
+
+ChatCFD: https://doi.org/10.1002/aidi.202500174
+Agent-assisted CFD design inspiration; not a reproduction of its implementation.
+
+AI CFD research: https://arxiv.org/abs/2605.06607
+Design discussion/reference; not an implementation or verification of that paper.
+
+Browser implementation uses React and Vite, under their respective MIT licenses.
+Dependency licenses are available in their published packages. Visualisation and
+simulation data were generated for this independent application project.

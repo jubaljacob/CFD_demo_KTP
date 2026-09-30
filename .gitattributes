@@ -1,0 +1,2 @@
+# Preserve original OpenFOAM evidence bytes, including solver formatting.
+public/evidence/** -text -whitespace
