@@ -97,9 +97,9 @@ The model uses **simplified geometry and isothermal passive nitrogen transport**
 - Heat transfer.
 - Film growth or film uniformity.
 
-The model has **not been validated against reactor measurements**.
+The model has **not been validated against real reactor measurements**.
 
-This is an independent application project, not a validated model of Oxford Instruments equipment.
+This is an independent application project.
 
 ## Run the public viewer locally
 
@@ -154,5 +154,3 @@ npm run preview
 These sources informed the project; the demonstration does not reproduce their complete research systems. Additional source notes are provided in [`SOURCES.txt`](SOURCES.txt).
 
 ---
-
-Created by **Jubal Jacob** with AI-assisted development.
