@@ -37,10 +37,6 @@ Five inlets:
 
 The five-inlet case reached the threshold approximately 7.79 seconds sooner.
 
-Both cases used 75 sccm per inlet. Adding the fifth inlet therefore increased total supply by 25%, as well as changing the geometry. The result cannot isolate the benefit of inlet placement or establish an optimal design.
-
-A useful next study would hold total supply constant while comparing the two layouts.
-
 
 THE AI USE CASE
 
